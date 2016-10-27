@@ -134,6 +134,12 @@
     <Compile Include="PregledKasaForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ServisForm.Designer.vb">
+      <DependentUpon>ServisForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServisForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="KasaForm.resx">
@@ -162,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PregledKasaForm.resx">
       <DependentUpon>PregledKasaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServisForm.resx">
+      <DependentUpon>ServisForm.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

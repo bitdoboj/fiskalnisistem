@@ -32,4 +32,9 @@
         PregledKasaForm.Show()
         PregledKasaForm.MdiParent = Me
     End Sub
+
+    Private Sub ServisToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ServisToolStripMenuItem.Click
+        ServisForm.Show()
+        ServisForm.MdiParent = Me
+    End Sub
 End Class
