@@ -15,4 +15,5 @@
     Public datumFiskalizacije As String
     Public napomena As String
 
+
 End Class
