@@ -73,7 +73,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Kasa.vb" />
+    <Compile Include="Modeli\Kasa.vb" />
     <Compile Include="KasaForm.Designer.vb">
       <DependentUpon>KasaForm.vb</DependentUpon>
     </Compile>
@@ -93,13 +93,14 @@
     <Compile Include="Meni.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Komitent.vb" />
+    <Compile Include="Modeli\Komitent.vb" />
     <Compile Include="modelForm.Designer.vb">
       <DependentUpon>modelForm.vb</DependentUpon>
     </Compile>
     <Compile Include="modelForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Modeli\Servis.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -191,6 +192,7 @@
   <ItemGroup>
     <None Include="Resources\folder-customer-icon.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

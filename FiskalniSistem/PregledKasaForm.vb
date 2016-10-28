@@ -11,7 +11,7 @@ Public Class PregledKasaForm
 
         openConnection()
        
-        query = "SELECT  kasa.id, komitent.nazivKomitenta AS Komitent, kasa.brojKase AS Kasa, " +
+        query = "SELECT kasa.id, komitent.nazivKomitenta AS Komitent, kasa.brojKase AS Kasa, " +
                     "kasa.brojModula AS Modul, kasa.adresaInstaliranja AS Adresa, kasa.telefon AS Telefon, " +
                     "model.nazivModela AS Model FROM kasa " +
                 "INNER JOIN model ON kasa.modelId = model.id " +
@@ -52,5 +52,11 @@ Public Class PregledKasaForm
     Private Sub Pregled_Click(sender As Object, e As EventArgs) Handles Pregled.Click
         
 
+    End Sub
+
+    Private Sub servis_Click(sender As Object, e As EventArgs) Handles servis.Click
+        kasaIdPretraga = pregledKasa.Item(0, pregledKasa.CurrentRow.Index).Value
+        ServisForm.Show()
+        ServisForm.MdiParent = Meni
     End Sub
 End Class

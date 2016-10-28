@@ -63,7 +63,9 @@ Public Class modelForm
     End Sub
 
     Private Sub ModeliDataGridView_CellMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles ModeliDataGridView.CellMouseClick
+
         Dim modelId As Integer = ModeliDataGridView.Item(0, ModeliDataGridView.CurrentRow.Index).Value
+
         openConnection()
 
         query = "SELECT * FROM Model WHERE model.id=" & modelId & ";"

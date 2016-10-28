@@ -141,6 +141,18 @@ Module Alati
 
         Return kasa
     End Function
+    Public Sub saveServis(servis As Servis)
+
+        openConnection()
+        If (servis.id <> 0) Then
+            query = "UPDATE servis SET kasaId='" & servis.kasaId & "', datumServisa='" & servis.datumServisa & "', opis='" & servis.opis & "' WHERE id='" & servis.id & "'"
+        Else
+            query = "INSERT INTO servis (kasaId, datumServisa, opis) VALUES ('" & servis.kasaId & "', '" & servis.datumServisa & "', '" & servis.opis & "')"
+        End If
+
+        runSQLCommand()
+
+    End Sub
     Public Function getNazivKomitenta(id As Integer)
 
         Dim naziv As String
@@ -170,6 +182,44 @@ Module Alati
 
         nazivModela.Read()
         naziv = nazivModela("nazivModela")
+
+        closeConnection()
+
+        Return naziv
+    End Function
+    Public Function getBrojKase(id As Integer)
+
+        Dim naziv As String
+
+        openConnection()
+
+        query = "SELECT kasa.brojKase FROM kasa WHERE kasa.id=" & id & ";"
+        mySqlDataAdapter = New MySqlDataAdapter(query, sqlcon)
+        Dim sqlcmd As New MySqlCommand(query, sqlcon)
+        Dim brojKase As MySqlClient.MySqlDataReader = sqlcmd.ExecuteReader
+
+        brojKase.Read()
+
+        naziv = brojKase("brojKase")
+
+        closeConnection()
+        Return naziv
+    End Function
+    Public Function getNazivKomitentaByKasaId(kasaId)
+
+        Dim naziv As String
+        openConnection()
+        query = "SELECT komitent.nazivKomitenta FROM komitent " +
+                "INNER JOIN kasa ON komitent.id = kasa.komitentId " +
+                "WHERE kasa.id=" & kasaId & ";"
+
+        mySqlDataAdapter = New MySqlDataAdapter(query, sqlcon)
+        Dim sqlcmd As New MySqlCommand(query, sqlcon)
+        Dim nazivKomitenta As MySqlClient.MySqlDataReader = sqlcmd.ExecuteReader
+
+        nazivKomitenta.Read()
+
+        naziv = nazivKomitenta("nazivKomitenta")
 
         closeConnection()
 

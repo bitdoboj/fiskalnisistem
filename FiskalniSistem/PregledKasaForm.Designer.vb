@@ -27,6 +27,7 @@ Partial Class PregledKasaForm
         Me.Label1 = New System.Windows.Forms.Label()
         Me.izmjene = New System.Windows.Forms.Button()
         Me.Pregled = New System.Windows.Forms.Button()
+        Me.servis = New System.Windows.Forms.Button()
         CType(Me.pregledKasa, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -61,7 +62,7 @@ Partial Class PregledKasaForm
         '
         'izmjene
         '
-        Me.izmjene.Location = New System.Drawing.Point(710, 45)
+        Me.izmjene.Location = New System.Drawing.Point(709, 45)
         Me.izmjene.Name = "izmjene"
         Me.izmjene.Size = New System.Drawing.Size(75, 23)
         Me.izmjene.TabIndex = 3
@@ -70,18 +71,28 @@ Partial Class PregledKasaForm
         '
         'Pregled
         '
-        Me.Pregled.Location = New System.Drawing.Point(623, 45)
+        Me.Pregled.Location = New System.Drawing.Point(631, 45)
         Me.Pregled.Name = "Pregled"
         Me.Pregled.Size = New System.Drawing.Size(75, 23)
         Me.Pregled.TabIndex = 4
         Me.Pregled.Text = "Pregled"
         Me.Pregled.UseVisualStyleBackColor = True
         '
+        'servis
+        '
+        Me.servis.Location = New System.Drawing.Point(553, 45)
+        Me.servis.Name = "servis"
+        Me.servis.Size = New System.Drawing.Size(75, 23)
+        Me.servis.TabIndex = 5
+        Me.servis.Text = "Servis"
+        Me.servis.UseVisualStyleBackColor = True
+        '
         'PregledKasaForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(797, 433)
+        Me.Controls.Add(Me.servis)
         Me.Controls.Add(Me.Pregled)
         Me.Controls.Add(Me.izmjene)
         Me.Controls.Add(Me.Label1)
@@ -101,4 +112,5 @@ Partial Class PregledKasaForm
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents izmjene As System.Windows.Forms.Button
     Friend WithEvents Pregled As System.Windows.Forms.Button
+    Friend WithEvents servis As System.Windows.Forms.Button
 End Class
