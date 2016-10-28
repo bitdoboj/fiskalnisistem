@@ -7,10 +7,6 @@ Public Class PregledKasaForm
     End Sub
     Private Sub fillKomitentiSaKasama()
 
-       
-
-        openConnection()
-       
         query = "SELECT kasa.id, komitent.nazivKomitenta AS Komitent, kasa.brojKase AS Kasa, " +
                     "kasa.brojModula AS Modul, kasa.adresaInstaliranja AS Adresa, kasa.telefon AS Telefon, " +
                     "model.nazivModela AS Model FROM kasa " +
@@ -18,11 +14,7 @@ Public Class PregledKasaForm
                 "LEFT JOIN komitent ON kasa.komitentId = komitent.id " +
                 "WHERE (kasa.brojKase LIKE '%" & Me.searchBox.Text & "%');"
 
-        dataSet = New DataSet
-        mySqlDataAdapter = New MySqlDataAdapter(query, sqlcon)
-        mySqlDataAdapter.Fill(dataSet)
-
-        Me.pregledKasa.DataSource = dataSet.Tables(0)
+        Me.pregledKasa.DataSource = getDataFromDatabase(query)
 
         pregledKasa.Columns(0).Width = 40
         pregledKasa.Columns(1).Width = 160
@@ -30,7 +22,6 @@ Public Class PregledKasaForm
         pregledKasa.Columns(3).Width = 80
         pregledKasa.Columns(4).Width = 150
 
-        closeConnection()
     End Sub
 
     Private Sub pregledKasa_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles pregledKasa.CellContentClick

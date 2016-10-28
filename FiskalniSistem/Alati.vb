@@ -24,6 +24,7 @@ Module Alati
             MessageBox.Show(ex.Message)
         End Try
     End Sub
+
     Public Sub closeConnection()
         Try
             If sqlcon.State = ConnectionState.Open Then
@@ -34,7 +35,6 @@ Module Alati
         End Try
     End Sub
 
-
     Public Sub saveKomitent(nazivKomitenta As String, telefon As String, Adresa As String, brojUgovora As String, jib As String, pib As String, napomena As String)
 
         query = "INSERT INTO Komitent (nazivKomitenta, telefon, adresa, brojUgovora, jib, pib, napomena) " +
@@ -43,6 +43,7 @@ Module Alati
         runSQLCommand()
 
     End Sub
+
     Public Sub updateKomitent(id As Integer, nazivKomitenta As String, telefon As String, adresa As String, brojUgovora As String, jib As String, pib As String, napomena As String)
 
         query = "UPDATE Komitent SET nazivKomitenta='" & nazivKomitenta & "', telefon='" & telefon & "',  adresa='" & adresa & "',  brojUgovora='" & brojUgovora & "',  jib='" & jib & "',  pib='" & pib & "',  napomena='" & napomena & "' WHERE id='" & id & "'"
@@ -50,6 +51,7 @@ Module Alati
         runSQLCommand()
 
     End Sub
+
     Public Sub saveModel(nazivModela As String, opis As String)
 
         query = "INSERT INTO model (nazivModela, opis) VALUES ('" & nazivModela & "', '" & opis & "')"
@@ -57,6 +59,7 @@ Module Alati
         runSQLCommand()
 
     End Sub
+
     Public Sub updateModel(id As Integer, nazivModela As String, opis As String)
 
         query = "UPDATE model SET nazivModela='" & nazivModela & "', opis='" & opis & "' WHERE id='" & id & "'"
@@ -64,6 +67,7 @@ Module Alati
         runSQLCommand()
 
     End Sub
+
     Public Sub saveKasa(kasa As Kasa)
 
         If (kasa.id <> 0) Then
@@ -76,6 +80,7 @@ Module Alati
         runSQLCommand()
 
     End Sub
+
     Public Sub updateKasa(kasa As Kasa)
 
         query = "UPDATE kasa SET " +
@@ -96,6 +101,7 @@ Module Alati
         runSQLCommand()
 
     End Sub
+
     Public Sub deleteRecord(id As Integer, tabela As String)
 
         query = "DELETE FROM " & tabela & " WHERE id='" & id & "';"
@@ -141,6 +147,7 @@ Module Alati
 
         Return kasa
     End Function
+
     Public Sub saveServis(servis As Servis)
 
         openConnection()
@@ -187,6 +194,7 @@ Module Alati
 
         Return naziv
     End Function
+
     Public Function getBrojKase(id As Integer)
 
         Dim naziv As String
@@ -205,6 +213,7 @@ Module Alati
         closeConnection()
         Return naziv
     End Function
+
     Public Function getNazivKomitentaByKasaId(kasaId)
 
         Dim naziv As String
@@ -224,6 +233,24 @@ Module Alati
         closeConnection()
 
         Return naziv
+    End Function
+
+    Public Function getDataFromDatabase(query As String)
+        'Veoma vazna funkcija, pozeljne razne dorade jer program koristi
+        'Funkcija koja vraca podatke iz baze na osnovu querya
+
+        openConnection()
+        Try
+            dataSet = New DataSet
+            mySqlDataAdapter = New MySqlDataAdapter(query, sqlcon)
+            mySqlDataAdapter.Fill(dataSet)
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+        closeConnection()
+
+        Return dataSet.Tables(0)
     End Function
 
     Public Sub runSQLCommand()

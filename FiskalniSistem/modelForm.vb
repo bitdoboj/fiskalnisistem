@@ -32,14 +32,9 @@ Public Class modelForm
 
     Public Sub fillModeli()
 
-        openConnection()
-
         query = "SELECT id, nazivModela AS Naziv, opis FROM model ORDER BY id"
-        dataSet = New DataSet
-        mySqlDataAdapter = New MySqlDataAdapter(query, sqlcon)
-        mySqlDataAdapter.Fill(dataSet)
 
-        Me.ModeliDataGridView.DataSource = dataSet.Tables(0)
+        Me.ModeliDataGridView.DataSource = getDataFromDatabase(query)
 
         Dim id As DataGridViewColumn = ModeliDataGridView.Columns(0)
         id.Width = 60

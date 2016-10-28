@@ -37,4 +37,9 @@
         ServisForm.Show()
         ServisForm.MdiParent = Me
     End Sub
+
+    Private Sub KomitentiToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KomitentiToolStripMenuItem.Click
+        KomitentiPregled.Show()
+        KomitentiPregled.MdiParent = Me
+    End Sub
 End Class

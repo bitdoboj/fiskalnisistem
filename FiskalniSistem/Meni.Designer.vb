@@ -33,6 +33,7 @@ Partial Class Meni
         Me.NovaKasaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PregledKasaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ServisToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.KomitentiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -47,7 +48,7 @@ Partial Class Meni
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NoviKomitentToolStripMenuItem, Me.ToolStripSeparator1, Me.NoviModelToolStripMenuItem, Me.ToolStripSeparator2, Me.TestToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NoviKomitentToolStripMenuItem, Me.ToolStripSeparator1, Me.NoviModelToolStripMenuItem, Me.ToolStripSeparator2, Me.TestToolStripMenuItem, Me.KomitentiToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
@@ -55,29 +56,29 @@ Partial Class Meni
         'NoviKomitentToolStripMenuItem
         '
         Me.NoviKomitentToolStripMenuItem.Name = "NoviKomitentToolStripMenuItem"
-        Me.NoviKomitentToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
+        Me.NoviKomitentToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.NoviKomitentToolStripMenuItem.Text = "Novi komitent"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(147, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
         '
         'NoviModelToolStripMenuItem
         '
         Me.NoviModelToolStripMenuItem.Name = "NoviModelToolStripMenuItem"
-        Me.NoviModelToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
+        Me.NoviModelToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.NoviModelToolStripMenuItem.Text = "Modeli"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(147, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(149, 6)
         '
         'TestToolStripMenuItem
         '
         Me.TestToolStripMenuItem.Name = "TestToolStripMenuItem"
-        Me.TestToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
+        Me.TestToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.TestToolStripMenuItem.Text = "Test"
         '
         'KasaToolStripMenuItem1
@@ -104,6 +105,12 @@ Partial Class Meni
         Me.ServisToolStripMenuItem.Name = "ServisToolStripMenuItem"
         Me.ServisToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ServisToolStripMenuItem.Text = "Servis"
+        '
+        'KomitentiToolStripMenuItem
+        '
+        Me.KomitentiToolStripMenuItem.Name = "KomitentiToolStripMenuItem"
+        Me.KomitentiToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.KomitentiToolStripMenuItem.Text = "Komitenti"
         '
         'Meni
         '
@@ -133,4 +140,5 @@ Partial Class Meni
     Friend WithEvents NovaKasaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PregledKasaToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ServisToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents KomitentiToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

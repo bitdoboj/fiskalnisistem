@@ -11,21 +11,14 @@ Public Class NadjiKomitenta
     End Sub
     Private Sub fillKomitenti()
 
-        openConnection()
-
         query = "SELECT Komitent.id, Komitent.nazivKomitenta FROM Komitent WHERE (Komitent.nazivKomitenta LIKE '%" & Me.searchBox.Text & "%') ORDER BY Komitent.nazivKomitenta;"
-        dataSet = New DataSet
-        mySqlDataAdapter = New MySqlDataAdapter(query, sqlcon)
-        mySqlDataAdapter.Fill(dataSet)
 
-        Me.KomitentiGridView.DataSource = dataSet.Tables(0)
+        Me.KomitentiGridView.DataSource = getDataFromDatabase(query)
 
         Dim id As DataGridViewColumn = KomitentiGridView.Columns(0)
         id.Width = 60
         Dim naziv As DataGridViewColumn = KomitentiGridView.Columns(1)
         naziv.Width = 220
-
-        closeConnection()
 
     End Sub
 
