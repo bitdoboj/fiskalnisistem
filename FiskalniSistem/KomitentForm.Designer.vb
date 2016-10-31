@@ -29,7 +29,6 @@ Partial Class KomitentForm
         Me.Telefon = New System.Windows.Forms.TextBox()
         Me.jib = New System.Windows.Forms.TextBox()
         Me.napomena = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -50,7 +49,7 @@ Partial Class KomitentForm
         '
         Me.nazivKomitenta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.nazivKomitenta.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.nazivKomitenta.Location = New System.Drawing.Point(120, 28)
+        Me.nazivKomitenta.Location = New System.Drawing.Point(138, 48)
         Me.nazivKomitenta.Name = "nazivKomitenta"
         Me.nazivKomitenta.Size = New System.Drawing.Size(377, 26)
         Me.nazivKomitenta.TabIndex = 0
@@ -59,7 +58,7 @@ Partial Class KomitentForm
         '
         Me.pib.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pib.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pib.Location = New System.Drawing.Point(120, 210)
+        Me.pib.Location = New System.Drawing.Point(138, 250)
         Me.pib.Name = "pib"
         Me.pib.Size = New System.Drawing.Size(377, 21)
         Me.pib.TabIndex = 4
@@ -68,7 +67,7 @@ Partial Class KomitentForm
         '
         Me.brojUgovora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.brojUgovora.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.brojUgovora.Location = New System.Drawing.Point(120, 250)
+        Me.brojUgovora.Location = New System.Drawing.Point(138, 290)
         Me.brojUgovora.Name = "brojUgovora"
         Me.brojUgovora.Size = New System.Drawing.Size(377, 21)
         Me.brojUgovora.TabIndex = 5
@@ -77,7 +76,7 @@ Partial Class KomitentForm
         '
         Me.adresa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.adresa.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.adresa.Location = New System.Drawing.Point(120, 90)
+        Me.adresa.Location = New System.Drawing.Point(138, 130)
         Me.adresa.Name = "adresa"
         Me.adresa.Size = New System.Drawing.Size(377, 21)
         Me.adresa.TabIndex = 1
@@ -86,7 +85,7 @@ Partial Class KomitentForm
         '
         Me.Telefon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Telefon.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Telefon.Location = New System.Drawing.Point(120, 130)
+        Me.Telefon.Location = New System.Drawing.Point(138, 170)
         Me.Telefon.Name = "Telefon"
         Me.Telefon.Size = New System.Drawing.Size(377, 21)
         Me.Telefon.TabIndex = 2
@@ -95,7 +94,7 @@ Partial Class KomitentForm
         '
         Me.jib.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.jib.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.jib.Location = New System.Drawing.Point(120, 170)
+        Me.jib.Location = New System.Drawing.Point(138, 210)
         Me.jib.Name = "jib"
         Me.jib.Size = New System.Drawing.Size(377, 21)
         Me.jib.TabIndex = 3
@@ -104,27 +103,17 @@ Partial Class KomitentForm
         '
         Me.napomena.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.napomena.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.napomena.Location = New System.Drawing.Point(120, 290)
+        Me.napomena.Location = New System.Drawing.Point(138, 330)
         Me.napomena.Multiline = True
         Me.napomena.Name = "napomena"
         Me.napomena.Size = New System.Drawing.Size(377, 79)
         Me.napomena.TabIndex = 6
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(42, 38)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(74, 15)
-        Me.Label1.TabIndex = 8
-        Me.Label1.Text = "komitenta:"
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(87, 172)
+        Me.Label3.Location = New System.Drawing.Point(105, 212)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(27, 15)
         Me.Label3.TabIndex = 10
@@ -135,7 +124,7 @@ Partial Class KomitentForm
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(63, 132)
+        Me.Label4.Location = New System.Drawing.Point(81, 172)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(51, 15)
         Me.Label4.TabIndex = 11
@@ -146,7 +135,7 @@ Partial Class KomitentForm
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(66, 93)
+        Me.Label5.Location = New System.Drawing.Point(84, 133)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(48, 15)
         Me.Label5.TabIndex = 12
@@ -156,7 +145,7 @@ Partial Class KomitentForm
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(35, 252)
+        Me.Label7.Location = New System.Drawing.Point(53, 292)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(79, 15)
         Me.Label7.TabIndex = 14
@@ -176,7 +165,7 @@ Partial Class KomitentForm
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(85, 213)
+        Me.Label9.Location = New System.Drawing.Point(103, 253)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(29, 15)
         Me.Label9.TabIndex = 16
@@ -187,7 +176,7 @@ Partial Class KomitentForm
         '
         Me.Snimi.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Snimi.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Snimi.Location = New System.Drawing.Point(575, 346)
+        Me.Snimi.Location = New System.Drawing.Point(685, 368)
         Me.Snimi.Name = "Snimi"
         Me.Snimi.Size = New System.Drawing.Size(158, 42)
         Me.Snimi.TabIndex = 7
@@ -207,7 +196,7 @@ Partial Class KomitentForm
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(297, 345)
+        Me.Label6.Location = New System.Drawing.Point(315, 385)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(0, 13)
         Me.Label6.TabIndex = 18
@@ -216,7 +205,7 @@ Partial Class KomitentForm
         '
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox1.Image = Global.FiskalniSistem.My.Resources.Resources.folder_customer_icon
-        Me.PictureBox1.Location = New System.Drawing.Point(527, 72)
+        Me.PictureBox1.Location = New System.Drawing.Point(637, 94)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(256, 256)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -227,7 +216,7 @@ Partial Class KomitentForm
         '
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.id)
-        Me.GroupBox1.Location = New System.Drawing.Point(20, 61)
+        Me.GroupBox1.Location = New System.Drawing.Point(38, 101)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(499, 326)
         Me.GroupBox1.TabIndex = 20
@@ -237,18 +226,18 @@ Partial Class KomitentForm
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(68, 23)
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(135, 28)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(42, 15)
+        Me.Label10.Size = New System.Drawing.Size(86, 13)
         Me.Label10.TabIndex = 22
-        Me.Label10.Text = "Naziv"
+        Me.Label10.Text = "Naziv komitenta:"
         '
         'KomitentForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(797, 433)
+        Me.ClientSize = New System.Drawing.Size(984, 462)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label6)
@@ -258,7 +247,6 @@ Partial Class KomitentForm
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.napomena)
         Me.Controls.Add(Me.jib)
         Me.Controls.Add(Me.Telefon)
@@ -268,9 +256,8 @@ Partial Class KomitentForm
         Me.Controls.Add(Me.nazivKomitenta)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "KomitentForm"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Novi komitent"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -285,7 +272,6 @@ Partial Class KomitentForm
     Friend WithEvents Telefon As System.Windows.Forms.TextBox
     Friend WithEvents jib As System.Windows.Forms.TextBox
     Friend WithEvents napomena As System.Windows.Forms.TextBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label

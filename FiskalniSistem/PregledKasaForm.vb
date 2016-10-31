@@ -10,9 +10,9 @@ Public Class PregledKasaForm
         query = "SELECT kasa.id, komitent.nazivKomitenta AS Komitent, kasa.brojKase AS Kasa, " +
                     "kasa.brojModula AS Modul, kasa.adresaInstaliranja AS Adresa, kasa.telefon AS Telefon, " +
                     "model.nazivModela AS Model FROM kasa " +
-                "INNER JOIN model ON kasa.modelId = model.id " +
-                "LEFT JOIN komitent ON kasa.komitentId = komitent.id " +
-                "WHERE (kasa.brojKase LIKE '%" & Me.searchBox.Text & "%');"
+                    "INNER JOIN model ON kasa.modelId = model.id " +
+                    "LEFT JOIN komitent ON kasa.komitentId = komitent.id " +
+                    "WHERE (kasa.brojKase LIKE '%" & Me.searchBox.Text & "%');"
 
         Me.pregledKasa.DataSource = getDataFromDatabase(query)
 

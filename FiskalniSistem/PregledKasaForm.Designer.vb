@@ -91,7 +91,7 @@ Partial Class PregledKasaForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(797, 433)
+        Me.ClientSize = New System.Drawing.Size(984, 462)
         Me.Controls.Add(Me.servis)
         Me.Controls.Add(Me.Pregled)
         Me.Controls.Add(Me.izmjene)
@@ -101,7 +101,6 @@ Partial Class PregledKasaForm
         Me.Name = "PregledKasaForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Pregled kasa"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.pregledKasa, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

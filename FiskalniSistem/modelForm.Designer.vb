@@ -75,7 +75,7 @@ Partial Class modelForm
         '
         'Snimi
         '
-        Me.Snimi.Location = New System.Drawing.Point(115, 321)
+        Me.Snimi.Location = New System.Drawing.Point(116, 255)
         Me.Snimi.Name = "Snimi"
         Me.Snimi.Size = New System.Drawing.Size(100, 37)
         Me.Snimi.TabIndex = 8
@@ -88,17 +88,17 @@ Partial Class modelForm
         Me.ModeliDataGridView.AllowUserToDeleteRows = False
         Me.ModeliDataGridView.AllowUserToOrderColumns = True
         Me.ModeliDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.ModeliDataGridView.Location = New System.Drawing.Point(280, 56)
+        Me.ModeliDataGridView.Location = New System.Drawing.Point(383, 87)
         Me.ModeliDataGridView.Name = "ModeliDataGridView"
         Me.ModeliDataGridView.ReadOnly = True
-        Me.ModeliDataGridView.Size = New System.Drawing.Size(503, 217)
+        Me.ModeliDataGridView.Size = New System.Drawing.Size(503, 279)
         Me.ModeliDataGridView.TabIndex = 9
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(442, 30)
+        Me.Label5.Location = New System.Drawing.Point(545, 61)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(179, 15)
         Me.Label5.TabIndex = 13
@@ -112,16 +112,16 @@ Partial Class modelForm
         Me.GroupBox1.Controls.Add(Me.nazivModela)
         Me.GroupBox1.Controls.Add(Me.opis)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(25, 25)
+        Me.GroupBox1.Location = New System.Drawing.Point(93, 57)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(230, 372)
+        Me.GroupBox1.Size = New System.Drawing.Size(230, 309)
         Me.GroupBox1.TabIndex = 21
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Opsti podaci"
         '
         'Add
         '
-        Me.Add.Location = New System.Drawing.Point(9, 321)
+        Me.Add.Location = New System.Drawing.Point(10, 255)
         Me.Add.Name = "Add"
         Me.Add.Size = New System.Drawing.Size(100, 37)
         Me.Add.TabIndex = 9
@@ -141,7 +141,7 @@ Partial Class modelForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(797, 433)
+        Me.ClientSize = New System.Drawing.Size(984, 462)
         Me.Controls.Add(Me.id)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.ModeliDataGridView)
@@ -149,7 +149,6 @@ Partial Class modelForm
         Me.Name = "modelForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Model"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.ModeliDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

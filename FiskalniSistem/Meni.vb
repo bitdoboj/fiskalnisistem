@@ -3,7 +3,7 @@
     Private Sub NoviKomitentToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NoviKomitentToolStripMenuItem.Click
 
         KomitentForm.Show()
-        KomitentForm.MdiParent = Me
+        'KomitentForm.MdiParent = Me
     End Sub
 
     Private Sub TestToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TestToolStripMenuItem.Click
