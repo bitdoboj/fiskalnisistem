@@ -17,6 +17,7 @@ Public Class KomitentiPregled
         komitentiLista.Columns(2).Width = 80
         komitentiLista.Columns(3).Width = 165
         komitentiLista.Columns(4).Width = 80
+        komitentiLista.Columns(6).Width = 288
 
         'closeConnection()
     End Sub

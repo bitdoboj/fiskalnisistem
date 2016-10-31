@@ -39,7 +39,7 @@ Partial Class KomitentiPregled
         Me.komitentiLista.Location = New System.Drawing.Point(11, 75)
         Me.komitentiLista.Name = "komitentiLista"
         Me.komitentiLista.ReadOnly = True
-        Me.komitentiLista.Size = New System.Drawing.Size(773, 320)
+        Me.komitentiLista.Size = New System.Drawing.Size(961, 375)
         Me.komitentiLista.TabIndex = 1
         '
         'Label1
@@ -56,12 +56,12 @@ Partial Class KomitentiPregled
         Me.searchBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.searchBox.Location = New System.Drawing.Point(65, 49)
         Me.searchBox.Name = "searchBox"
-        Me.searchBox.Size = New System.Drawing.Size(100, 20)
+        Me.searchBox.Size = New System.Drawing.Size(184, 20)
         Me.searchBox.TabIndex = 3
         '
         'servis
         '
-        Me.servis.Location = New System.Drawing.Point(552, 46)
+        Me.servis.Location = New System.Drawing.Point(741, 48)
         Me.servis.Name = "servis"
         Me.servis.Size = New System.Drawing.Size(75, 23)
         Me.servis.TabIndex = 8
@@ -70,7 +70,7 @@ Partial Class KomitentiPregled
         '
         'Pregled
         '
-        Me.Pregled.Location = New System.Drawing.Point(630, 46)
+        Me.Pregled.Location = New System.Drawing.Point(819, 48)
         Me.Pregled.Name = "Pregled"
         Me.Pregled.Size = New System.Drawing.Size(75, 23)
         Me.Pregled.TabIndex = 7
@@ -79,7 +79,7 @@ Partial Class KomitentiPregled
         '
         'izmjene
         '
-        Me.izmjene.Location = New System.Drawing.Point(708, 46)
+        Me.izmjene.Location = New System.Drawing.Point(897, 48)
         Me.izmjene.Name = "izmjene"
         Me.izmjene.Size = New System.Drawing.Size(75, 23)
         Me.izmjene.TabIndex = 6
