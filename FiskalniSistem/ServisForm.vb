@@ -3,11 +3,15 @@ Imports MySql.Data
 
 Public Class ServisForm
 
+    Private Sub ServisForm_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+        If e.KeyCode = Keys.Escape Then Me.Close()
+    End Sub
+
     Private Sub Servis_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.kasaId.Text = kasaIdPretraga
         fillServise()
         Me.brojKase.Text = getBrojKase(kasaIdPretraga)
-        Me.nazivKomitenta.text = getNazivKomitentaByKasaId(kasaIdPretraga)
+        Me.nazivKomitenta.Text = getNazivKomitentaByKasaId(kasaIdPretraga)
     End Sub
 
     Private Sub fillServise()
@@ -17,7 +21,7 @@ Public Class ServisForm
         Me.servisiLista.DataSource = getDataFromDatabase(query)
 
         servisiLista.Columns(0).Width = 40
-        servisiLista.Columns(2).Width = 590
+        servisiLista.Columns(2).Width = 775
 
     End Sub
 

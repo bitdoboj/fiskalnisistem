@@ -146,6 +146,7 @@ Partial Class modelForm
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.ModeliDataGridView)
         Me.Controls.Add(Me.GroupBox1)
+        Me.KeyPreview = True
         Me.Name = "modelForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Model"

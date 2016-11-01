@@ -52,6 +52,7 @@ Partial Class NadjiKomitenta
         Me.ClientSize = New System.Drawing.Size(364, 190)
         Me.Controls.Add(Me.searchBox)
         Me.Controls.Add(Me.KomitentiGridView)
+        Me.KeyPreview = True
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "NadjiKomitenta"

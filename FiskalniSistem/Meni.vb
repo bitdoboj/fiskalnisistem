@@ -34,6 +34,7 @@
     End Sub
 
     Private Sub ServisToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ServisToolStripMenuItem.Click
+        kasaIdPretraga = 3
         ServisForm.Show()
         ServisForm.MdiParent = Me
     End Sub
@@ -41,5 +42,19 @@
     Private Sub KomitentiToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KomitentiToolStripMenuItem.Click
         KomitentiPregled.Show()
         KomitentiPregled.MdiParent = Me
+    End Sub
+
+    Private Sub Meni_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+        If e.KeyCode = Keys.F3 Then
+            ServisForm.Show()
+        End If
+    End Sub
+
+    Private Sub Meni_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        KeyPreview = True
+    End Sub
+
+    Private Sub SettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SettingsToolStripMenuItem.Click
+        SettingsForm.Show()
     End Sub
 End Class

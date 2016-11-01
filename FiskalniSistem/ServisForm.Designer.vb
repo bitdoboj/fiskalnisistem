@@ -47,7 +47,7 @@ Partial Class ServisForm
         Me.servisiLista.Location = New System.Drawing.Point(12, 153)
         Me.servisiLista.Name = "servisiLista"
         Me.servisiLista.ReadOnly = True
-        Me.servisiLista.Size = New System.Drawing.Size(773, 242)
+        Me.servisiLista.Size = New System.Drawing.Size(960, 297)
         Me.servisiLista.TabIndex = 0
         '
         'Label10
@@ -86,12 +86,12 @@ Partial Class ServisForm
         Me.opis.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.opis.Location = New System.Drawing.Point(307, 122)
         Me.opis.Name = "opis"
-        Me.opis.Size = New System.Drawing.Size(435, 21)
+        Me.opis.Size = New System.Drawing.Size(617, 21)
         Me.opis.TabIndex = 50
         '
         'Snimi
         '
-        Me.Snimi.Location = New System.Drawing.Point(744, 121)
+        Me.Snimi.Location = New System.Drawing.Point(930, 121)
         Me.Snimi.Name = "Snimi"
         Me.Snimi.Size = New System.Drawing.Size(41, 23)
         Me.Snimi.TabIndex = 51
@@ -132,7 +132,7 @@ Partial Class ServisForm
         '
         Me.nazivKomitenta.AutoSize = True
         Me.nazivKomitenta.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.nazivKomitenta.Location = New System.Drawing.Point(307, 34)
+        Me.nazivKomitenta.Location = New System.Drawing.Point(355, 34)
         Me.nazivKomitenta.Name = "nazivKomitenta"
         Me.nazivKomitenta.Size = New System.Drawing.Size(97, 25)
         Me.nazivKomitenta.TabIndex = 55
@@ -143,14 +143,14 @@ Partial Class ServisForm
         Me.PictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox1.Location = New System.Drawing.Point(-7, 60)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(813, 1)
+        Me.PictureBox1.Size = New System.Drawing.Size(992, 1)
         Me.PictureBox1.TabIndex = 56
         Me.PictureBox1.TabStop = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(311, 65)
+        Me.Label1.Location = New System.Drawing.Point(359, 65)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(48, 13)
         Me.Label1.TabIndex = 57
@@ -169,7 +169,7 @@ Partial Class ServisForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(797, 433)
+        Me.ClientSize = New System.Drawing.Size(984, 462)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
@@ -183,10 +183,10 @@ Partial Class ServisForm
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.datumServisa)
         Me.Controls.Add(Me.servisiLista)
+        Me.KeyPreview = True
         Me.Name = "ServisForm"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Servis"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.servisiLista, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

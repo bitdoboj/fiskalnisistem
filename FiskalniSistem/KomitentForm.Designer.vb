@@ -255,6 +255,7 @@ Partial Class KomitentForm
         Me.Controls.Add(Me.pib)
         Me.Controls.Add(Me.nazivKomitenta)
         Me.Controls.Add(Me.GroupBox1)
+        Me.KeyPreview = True
         Me.Name = "KomitentForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Novi komitent"

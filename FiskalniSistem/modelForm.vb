@@ -26,6 +26,10 @@ Public Class modelForm
         Me.nazivModela.Text = ""
     End Sub
 
+    Private Sub modelForm_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+        If e.KeyCode = Keys.Escape Then Me.Close()
+    End Sub
+
     Private Sub modelForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         fillModeli()
     End Sub

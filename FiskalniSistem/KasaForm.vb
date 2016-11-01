@@ -9,6 +9,10 @@ Public Class KasaForm
         NadjiModel.Show()
     End Sub
 
+    Private Sub KasaForm_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+        If e.KeyCode = Keys.Escape Then Me.Close()
+    End Sub
+
     Private Sub KasaForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         If kasaIdPretraga <> 0 Then

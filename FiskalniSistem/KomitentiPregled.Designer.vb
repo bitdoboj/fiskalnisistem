@@ -97,6 +97,7 @@ Partial Class KomitentiPregled
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.searchBox)
         Me.Controls.Add(Me.komitentiLista)
+        Me.KeyPreview = True
         Me.Name = "KomitentiPregled"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "KomitentiPregled"

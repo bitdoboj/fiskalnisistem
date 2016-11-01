@@ -40,7 +40,7 @@ Partial Class PregledKasaForm
         Me.pregledKasa.Location = New System.Drawing.Point(12, 74)
         Me.pregledKasa.Name = "pregledKasa"
         Me.pregledKasa.ReadOnly = True
-        Me.pregledKasa.Size = New System.Drawing.Size(773, 320)
+        Me.pregledKasa.Size = New System.Drawing.Size(960, 376)
         Me.pregledKasa.TabIndex = 0
         '
         'searchBox
@@ -48,7 +48,7 @@ Partial Class PregledKasaForm
         Me.searchBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.searchBox.Location = New System.Drawing.Point(65, 48)
         Me.searchBox.Name = "searchBox"
-        Me.searchBox.Size = New System.Drawing.Size(100, 20)
+        Me.searchBox.Size = New System.Drawing.Size(192, 20)
         Me.searchBox.TabIndex = 1
         '
         'Label1
@@ -62,7 +62,7 @@ Partial Class PregledKasaForm
         '
         'izmjene
         '
-        Me.izmjene.Location = New System.Drawing.Point(709, 45)
+        Me.izmjene.Location = New System.Drawing.Point(896, 47)
         Me.izmjene.Name = "izmjene"
         Me.izmjene.Size = New System.Drawing.Size(75, 23)
         Me.izmjene.TabIndex = 3
@@ -71,7 +71,7 @@ Partial Class PregledKasaForm
         '
         'Pregled
         '
-        Me.Pregled.Location = New System.Drawing.Point(631, 45)
+        Me.Pregled.Location = New System.Drawing.Point(818, 47)
         Me.Pregled.Name = "Pregled"
         Me.Pregled.Size = New System.Drawing.Size(75, 23)
         Me.Pregled.TabIndex = 4
@@ -80,7 +80,7 @@ Partial Class PregledKasaForm
         '
         'servis
         '
-        Me.servis.Location = New System.Drawing.Point(553, 45)
+        Me.servis.Location = New System.Drawing.Point(740, 47)
         Me.servis.Name = "servis"
         Me.servis.Size = New System.Drawing.Size(75, 23)
         Me.servis.TabIndex = 5
@@ -98,8 +98,9 @@ Partial Class PregledKasaForm
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.searchBox)
         Me.Controls.Add(Me.pregledKasa)
+        Me.KeyPreview = True
         Me.Name = "PregledKasaForm"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Pregled kasa"
         CType(Me.pregledKasa, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

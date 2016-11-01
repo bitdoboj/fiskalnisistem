@@ -2,6 +2,10 @@
 
 Public Class KomitentiPregled
 
+    Private Sub KomitentiPregled_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+        If e.KeyCode = Keys.Escape Then Me.Close()
+    End Sub
+
     Private Sub KomitentiPregled_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         fillKomitente()
     End Sub
@@ -30,5 +34,9 @@ Public Class KomitentiPregled
         komitentIdPretraga = komitentiLista.Item(0, komitentiLista.CurrentRow.Index).Value
         KomitentForm.Show()
         KomitentForm.MdiParent = Meni
+    End Sub
+
+    Private Sub servis_Click(sender As Object, e As EventArgs) Handles servis.Click
+        
     End Sub
 End Class

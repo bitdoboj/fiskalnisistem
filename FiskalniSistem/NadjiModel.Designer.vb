@@ -43,6 +43,7 @@ Partial Class NadjiModel
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(364, 190)
         Me.Controls.Add(Me.ModelGridView)
+        Me.KeyPreview = True
         Me.Name = "NadjiModel"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Pretraga"

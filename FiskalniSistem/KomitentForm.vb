@@ -29,6 +29,11 @@ Public Class KomitentForm
         Me.napomena.Text = ""
     End Sub
 
+    Private Sub KomitentForm_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+        If e.KeyCode = Keys.Escape Then Me.Close()
+
+    End Sub
+
     Private Sub KomitentForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
 

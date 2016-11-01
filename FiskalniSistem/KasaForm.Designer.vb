@@ -59,7 +59,7 @@ Partial Class KasaForm
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(294, 356)
+        Me.Label6.Location = New System.Drawing.Point(357, 384)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(0, 13)
         Me.Label6.TabIndex = 37
@@ -68,7 +68,7 @@ Partial Class KasaForm
         '
         Me.Snimi.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Snimi.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Snimi.Location = New System.Drawing.Point(519, 341)
+        Me.Snimi.Location = New System.Drawing.Point(670, 361)
         Me.Snimi.Name = "Snimi"
         Me.Snimi.Size = New System.Drawing.Size(158, 42)
         Me.Snimi.TabIndex = 30
@@ -79,7 +79,7 @@ Partial Class KasaForm
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(364, 211)
+        Me.Label9.Location = New System.Drawing.Point(427, 235)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(27, 15)
         Me.Label9.TabIndex = 36
@@ -90,7 +90,7 @@ Partial Class KasaForm
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(67, 173)
+        Me.Label7.Location = New System.Drawing.Point(130, 192)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(48, 15)
         Me.Label7.TabIndex = 35
@@ -100,7 +100,7 @@ Partial Class KasaForm
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(41, 103)
+        Me.Label5.Location = New System.Drawing.Point(104, 103)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(74, 15)
         Me.Label5.TabIndex = 34
@@ -110,7 +110,7 @@ Partial Class KasaForm
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(31, 137)
+        Me.Label4.Location = New System.Drawing.Point(94, 147)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(84, 15)
         Me.Label4.TabIndex = 33
@@ -121,7 +121,7 @@ Partial Class KasaForm
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(84, 211)
+        Me.Label3.Location = New System.Drawing.Point(147, 235)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(32, 15)
         Me.Label3.TabIndex = 32
@@ -132,7 +132,7 @@ Partial Class KasaForm
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(39, 42)
+        Me.Label1.Location = New System.Drawing.Point(102, 42)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(71, 15)
         Me.Label1.TabIndex = 31
@@ -142,7 +142,7 @@ Partial Class KasaForm
         '
         Me.napomena.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.napomena.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.napomena.Location = New System.Drawing.Point(116, 283)
+        Me.napomena.Location = New System.Drawing.Point(179, 311)
         Me.napomena.Multiline = True
         Me.napomena.Name = "napomena"
         Me.napomena.Size = New System.Drawing.Size(349, 100)
@@ -152,7 +152,7 @@ Partial Class KasaForm
         '
         Me.simKartica.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.simKartica.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.simKartica.Location = New System.Drawing.Point(117, 209)
+        Me.simKartica.Location = New System.Drawing.Point(180, 233)
         Me.simKartica.Name = "simKartica"
         Me.simKartica.Size = New System.Drawing.Size(224, 21)
         Me.simKartica.TabIndex = 4
@@ -161,7 +161,7 @@ Partial Class KasaForm
         '
         Me.brojTerminala.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.brojTerminala.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.brojTerminala.Location = New System.Drawing.Point(117, 135)
+        Me.brojTerminala.Location = New System.Drawing.Point(180, 145)
         Me.brojTerminala.Name = "brojTerminala"
         Me.brojTerminala.Size = New System.Drawing.Size(148, 21)
         Me.brojTerminala.TabIndex = 2
@@ -170,7 +170,7 @@ Partial Class KasaForm
         '
         Me.brojModula.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.brojModula.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.brojModula.Location = New System.Drawing.Point(117, 101)
+        Me.brojModula.Location = New System.Drawing.Point(180, 101)
         Me.brojModula.Name = "brojModula"
         Me.brojModula.Size = New System.Drawing.Size(148, 21)
         Me.brojModula.TabIndex = 1
@@ -179,7 +179,7 @@ Partial Class KasaForm
         '
         Me.telefon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.telefon.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.telefon.Location = New System.Drawing.Point(117, 171)
+        Me.telefon.Location = New System.Drawing.Point(180, 190)
         Me.telefon.Name = "telefon"
         Me.telefon.Size = New System.Drawing.Size(148, 21)
         Me.telefon.TabIndex = 3
@@ -188,7 +188,7 @@ Partial Class KasaForm
         '
         Me.pin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pin.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pin.Location = New System.Drawing.Point(399, 209)
+        Me.pin.Location = New System.Drawing.Point(462, 233)
         Me.pin.Name = "pin"
         Me.pin.Size = New System.Drawing.Size(66, 21)
         Me.pin.TabIndex = 5
@@ -198,7 +198,7 @@ Partial Class KasaForm
         '
         Me.brojKase.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.brojKase.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.brojKase.Location = New System.Drawing.Point(117, 39)
+        Me.brojKase.Location = New System.Drawing.Point(180, 39)
         Me.brojKase.Name = "brojKase"
         Me.brojKase.Size = New System.Drawing.Size(268, 26)
         Me.brojKase.TabIndex = 0
@@ -207,7 +207,7 @@ Partial Class KasaForm
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(38, 283)
+        Me.Label8.Location = New System.Drawing.Point(101, 311)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(72, 15)
         Me.Label8.TabIndex = 15
@@ -217,7 +217,7 @@ Partial Class KasaForm
         '
         Me.adresaInstaliranja.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.adresaInstaliranja.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.adresaInstaliranja.Location = New System.Drawing.Point(117, 246)
+        Me.adresaInstaliranja.Location = New System.Drawing.Point(180, 274)
         Me.adresaInstaliranja.Name = "adresaInstaliranja"
         Me.adresaInstaliranja.Size = New System.Drawing.Size(348, 21)
         Me.adresaInstaliranja.TabIndex = 6
@@ -226,7 +226,7 @@ Partial Class KasaForm
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(2, 249)
+        Me.Label2.Location = New System.Drawing.Point(65, 277)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(111, 15)
         Me.Label2.TabIndex = 39
@@ -255,7 +255,7 @@ Partial Class KasaForm
         '
         Me.Komitent.Controls.Add(Me.komitentid)
         Me.Komitent.Controls.Add(Me.nazivKomitenta)
-        Me.Komitent.Location = New System.Drawing.Point(523, 42)
+        Me.Komitent.Location = New System.Drawing.Point(674, 42)
         Me.Komitent.Name = "Komitent"
         Me.Komitent.Size = New System.Drawing.Size(235, 58)
         Me.Komitent.TabIndex = 43
@@ -265,7 +265,7 @@ Partial Class KasaForm
         'defiskalizacija
         '
         Me.defiskalizacija.AutoSize = True
-        Me.defiskalizacija.Location = New System.Drawing.Point(523, 246)
+        Me.defiskalizacija.Location = New System.Drawing.Point(674, 269)
         Me.defiskalizacija.Name = "defiskalizacija"
         Me.defiskalizacija.Size = New System.Drawing.Size(126, 17)
         Me.defiskalizacija.TabIndex = 44
@@ -276,7 +276,7 @@ Partial Class KasaForm
         '
         Me.Model.Controls.Add(Me.modelId)
         Me.Model.Controls.Add(Me.nazivModela)
-        Me.Model.Location = New System.Drawing.Point(522, 120)
+        Me.Model.Location = New System.Drawing.Point(673, 126)
         Me.Model.Name = "Model"
         Me.Model.Size = New System.Drawing.Size(235, 58)
         Me.Model.TabIndex = 45
@@ -306,7 +306,7 @@ Partial Class KasaForm
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(520, 190)
+        Me.Label10.Location = New System.Drawing.Point(671, 203)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(110, 15)
         Me.Label10.TabIndex = 46
@@ -315,7 +315,7 @@ Partial Class KasaForm
         'datumFiskalizacije
         '
         Me.datumFiskalizacije.CustomFormat = "dd/mm/yy"
-        Me.datumFiskalizacije.Location = New System.Drawing.Point(523, 209)
+        Me.datumFiskalizacije.Location = New System.Drawing.Point(674, 222)
         Me.datumFiskalizacije.MaxDate = New Date(2030, 12, 31, 0, 0, 0, 0)
         Me.datumFiskalizacije.MinDate = New Date(2008, 1, 1, 0, 0, 0, 0)
         Me.datumFiskalizacije.Name = "datumFiskalizacije"
@@ -325,7 +325,7 @@ Partial Class KasaForm
         'datumDefiskalizacije
         '
         Me.datumDefiskalizacije.CustomFormat = "dd/mm/yy"
-        Me.datumDefiskalizacije.Location = New System.Drawing.Point(522, 292)
+        Me.datumDefiskalizacije.Location = New System.Drawing.Point(673, 315)
         Me.datumDefiskalizacije.MaxDate = New Date(2030, 12, 31, 0, 0, 0, 0)
         Me.datumDefiskalizacije.MinDate = New Date(2008, 1, 1, 0, 0, 0, 0)
         Me.datumDefiskalizacije.Name = "datumDefiskalizacije"
@@ -337,7 +337,7 @@ Partial Class KasaForm
         '
         Me.datumDefiskalizacijeLabel.AutoSize = True
         Me.datumDefiskalizacijeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.datumDefiskalizacijeLabel.Location = New System.Drawing.Point(522, 269)
+        Me.datumDefiskalizacijeLabel.Location = New System.Drawing.Point(673, 292)
         Me.datumDefiskalizacijeLabel.Name = "datumDefiskalizacijeLabel"
         Me.datumDefiskalizacijeLabel.Size = New System.Drawing.Size(124, 15)
         Me.datumDefiskalizacijeLabel.TabIndex = 48
@@ -347,7 +347,7 @@ Partial Class KasaForm
         'id
         '
         Me.id.AutoSize = True
-        Me.id.Location = New System.Drawing.Point(31, 400)
+        Me.id.Location = New System.Drawing.Point(94, 415)
         Me.id.Name = "id"
         Me.id.Size = New System.Drawing.Size(13, 13)
         Me.id.TabIndex = 49
@@ -358,7 +358,7 @@ Partial Class KasaForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(797, 433)
+        Me.ClientSize = New System.Drawing.Size(984, 462)
         Me.Controls.Add(Me.id)
         Me.Controls.Add(Me.datumDefiskalizacijeLabel)
         Me.Controls.Add(Me.datumDefiskalizacije)
@@ -385,10 +385,10 @@ Partial Class KasaForm
         Me.Controls.Add(Me.pin)
         Me.Controls.Add(Me.brojKase)
         Me.Controls.Add(Me.Komitent)
+        Me.KeyPreview = True
         Me.Name = "KasaForm"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Kasa"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Komitent.ResumeLayout(False)
         Me.Komitent.PerformLayout()
         Me.Model.ResumeLayout(False)

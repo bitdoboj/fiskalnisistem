@@ -3,6 +3,10 @@
 
 Public Class NadjiKomitenta
 
+    Private Sub NadjiKomitenta_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+        If e.KeyCode = Keys.Escape Then Me.Close()
+    End Sub
+
     Private Sub NadjiKomitenta_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Show()
         searchBox.Focus()
@@ -22,18 +26,18 @@ Public Class NadjiKomitenta
 
     End Sub
 
-    
+
     Private Sub searchBox_TextChanged(sender As Object, e As EventArgs) Handles searchBox.TextChanged
         fillKomitenti()
     End Sub
 
-   
+
 
     Private Sub KomitentiGridView_CellMouseDoubleClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles KomitentiGridView.CellMouseDoubleClick
         KasaForm.nazivKomitenta.Text = KomitentiGridView.Item(1, KomitentiGridView.CurrentRow.Index).Value
         KasaForm.komitentid.Text = KomitentiGridView.Item(0, KomitentiGridView.CurrentRow.Index).Value
         Close()
-        
+
 
     End Sub
 End Class

@@ -18,6 +18,10 @@ Public Class NadjiModel
 
     End Sub
 
+    Private Sub NadjiModel_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+        If e.KeyCode = Keys.Escape Then Me.Close()
+    End Sub
+
     Private Sub NadjiModel_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         fillModel()
     End Sub

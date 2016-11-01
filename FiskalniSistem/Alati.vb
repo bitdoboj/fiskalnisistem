@@ -3,9 +3,9 @@ Imports MySql.Data
 
 Module Alati
     Public DatabaseName As String = "fiskalnisistem"
-    Public server As String = "localhost"
-    Public userName As String = "root"
-    Public password As String = "S26059"
+    Public server As String = My.Settings.ServerName
+    Public userName As String = My.Settings.User
+    Public password As String = My.Settings.Password
     Public connString As String = String.Format("server={0}; user id={1}; password={2}; database={3}; pooling=false", server, userName, password, DatabaseName)
     Public sqlcon As New MySqlConnection(connectionString:=connString)
     Public query As String
@@ -205,6 +205,8 @@ Module Alati
         mySqlDataAdapter = New MySqlDataAdapter(query, sqlcon)
         Dim sqlcmd As New MySqlCommand(query, sqlcon)
         Dim brojKase As MySqlClient.MySqlDataReader = sqlcmd.ExecuteReader
+
+        
 
         brojKase.Read()
 

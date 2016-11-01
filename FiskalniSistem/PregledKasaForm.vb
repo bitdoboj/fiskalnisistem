@@ -2,6 +2,10 @@
 
 Public Class PregledKasaForm
 
+    Private Sub PregledKasaForm_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+        If e.KeyCode = Keys.Escape Then Me.Close()
+    End Sub
+
     Private Sub PregledKasaForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         fillKomitentiSaKasama()
     End Sub
@@ -9,7 +13,7 @@ Public Class PregledKasaForm
 
         query = "SELECT kasa.id, komitent.nazivKomitenta AS Komitent, kasa.brojKase AS Kasa, " +
                     "kasa.brojModula AS Modul, kasa.adresaInstaliranja AS Adresa, kasa.telefon AS Telefon, " +
-                    "model.nazivModela AS Model FROM kasa " +
+                    "kasa.simKartica AS Sim, kasa.pin AS Pin, model.nazivModela AS Model FROM kasa " +
                     "INNER JOIN model ON kasa.modelId = model.id " +
                     "LEFT JOIN komitent ON kasa.komitentId = komitent.id " +
                     "WHERE (kasa.brojKase LIKE '%" & Me.searchBox.Text & "%');"
@@ -17,14 +21,12 @@ Public Class PregledKasaForm
         Me.pregledKasa.DataSource = getDataFromDatabase(query)
 
         pregledKasa.Columns(0).Width = 40
-        pregledKasa.Columns(1).Width = 160
+        pregledKasa.Columns(1).Width = 163
         pregledKasa.Columns(2).Width = 80
         pregledKasa.Columns(3).Width = 80
         pregledKasa.Columns(4).Width = 150
-
-    End Sub
-
-    Private Sub pregledKasa_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles pregledKasa.CellContentClick
+        pregledKasa.Columns(6).Width = 131
+        pregledKasa.Columns(7).Width = 52
 
     End Sub
 
@@ -36,18 +38,16 @@ Public Class PregledKasaForm
 
         kasaIdPretraga = pregledKasa.Item(0, pregledKasa.CurrentRow.Index).Value
         KasaForm.Show()
-        KasaForm.MdiParent = Meni
 
     End Sub
 
     Private Sub Pregled_Click(sender As Object, e As EventArgs) Handles Pregled.Click
-        
+
 
     End Sub
 
     Private Sub servis_Click(sender As Object, e As EventArgs) Handles servis.Click
         kasaIdPretraga = pregledKasa.Item(0, pregledKasa.CurrentRow.Index).Value
         ServisForm.Show()
-        ServisForm.MdiParent = Meni
     End Sub
 End Class
