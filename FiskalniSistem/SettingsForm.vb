@@ -6,7 +6,6 @@
 
     Private Sub SettingsForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         getSettings()
-
     End Sub
     Private Sub getSettings()
         Me.Server.Text = My.Settings.ServerName
@@ -18,5 +17,9 @@
         My.Settings.ServerName = Me.Server.Text
         My.Settings.User = Me.UserName.Text
         My.Settings.Password = Me.Password.Text
+    End Sub
+
+    Private Sub ReportViewer1_Load(sender As Object, e As EventArgs)
+
     End Sub
 End Class

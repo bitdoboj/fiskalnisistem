@@ -28,13 +28,13 @@ Partial Class Meni
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.NoviModelToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.TestToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.KomitentiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TestToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.KasaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.NovaKasaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PregledKasaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ServisToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -76,17 +76,23 @@ Partial Class Meni
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
         Me.ToolStripSeparator2.Size = New System.Drawing.Size(149, 6)
         '
-        'TestToolStripMenuItem
+        'SettingsToolStripMenuItem
         '
-        Me.TestToolStripMenuItem.Name = "TestToolStripMenuItem"
-        Me.TestToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.TestToolStripMenuItem.Text = "Test"
+        Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
+        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SettingsToolStripMenuItem.Text = "Settings"
         '
         'KomitentiToolStripMenuItem
         '
         Me.KomitentiToolStripMenuItem.Name = "KomitentiToolStripMenuItem"
         Me.KomitentiToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.KomitentiToolStripMenuItem.Text = "Komitenti"
+        '
+        'TestToolStripMenuItem
+        '
+        Me.TestToolStripMenuItem.Name = "TestToolStripMenuItem"
+        Me.TestToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.TestToolStripMenuItem.Text = "Test"
         '
         'KasaToolStripMenuItem1
         '
@@ -112,12 +118,6 @@ Partial Class Meni
         Me.ServisToolStripMenuItem.Name = "ServisToolStripMenuItem"
         Me.ServisToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
         Me.ServisToolStripMenuItem.Text = "Servis"
-        '
-        'SettingsToolStripMenuItem
-        '
-        Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
-        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.SettingsToolStripMenuItem.Text = "Settings"
         '
         'Meni
         '

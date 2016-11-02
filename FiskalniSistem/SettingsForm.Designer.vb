@@ -22,6 +22,7 @@ Partial Class SettingsForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Server = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.UserName = New System.Windows.Forms.TextBox()
@@ -29,6 +30,8 @@ Partial Class SettingsForm
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Snimi = New System.Windows.Forms.Button()
+        Me.MySqlDataReaderBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        CType(Me.MySqlDataReaderBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Server
@@ -96,6 +99,10 @@ Partial Class SettingsForm
         Me.Snimi.Text = "Snimi"
         Me.Snimi.UseVisualStyleBackColor = True
         '
+        'MySqlDataReaderBindingSource
+        '
+        Me.MySqlDataReaderBindingSource.DataSource = GetType(MySql.Data.MySqlClient.MySqlDataReader)
+        '
         'SettingsForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -111,6 +118,7 @@ Partial Class SettingsForm
         Me.KeyPreview = True
         Me.Name = "SettingsForm"
         Me.Text = "Settings"
+        CType(Me.MySqlDataReaderBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -122,4 +130,5 @@ Partial Class SettingsForm
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Snimi As System.Windows.Forms.Button
+    Friend WithEvents MySqlDataReaderBindingSource As System.Windows.Forms.BindingSource
 End Class
