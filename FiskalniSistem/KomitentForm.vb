@@ -47,13 +47,13 @@ Public Class KomitentForm
 
             komitent.Read()
             Me.id.Text = komitent("id")
-            Me.nazivKomitenta.Text = komitent("nazivKomitenta")
-            Me.Telefon.Text = komitent("telefon")
-            Me.adresa.Text = komitent("adresa")
-            Me.brojUgovora.Text = komitent("brojUgovora")
-            Me.jib.Text = komitent("jib")
-            Me.pib.Text = komitent("pib")
-            Me.napomena.Text = komitent("napomena")
+            Me.nazivKomitenta.Text = If(IsDBNull(komitent("nazivKomitenta")), "", komitent("nazivKomitenta"))
+            Me.Telefon.Text = If(IsDBNull(komitent("telefon")), "", komitent("telefon"))
+            Me.adresa.Text = If(IsDBNull(komitent("adresa")), "", komitent("adresa"))
+            Me.brojUgovora.Text = If(IsDBNull(komitent("brojUgovora")), "", komitent("brojUgovora"))
+            Me.jib.Text = If(IsDBNull(komitent("jib")), "", komitent("jib"))
+            Me.pib.Text = If(IsDBNull(komitent("pib")), "", komitent("pib"))
+            Me.napomena.Text = If(IsDBNull(komitent("napomena")), "", komitent("napomena"))
             closeConnection()
         End If
     End Sub

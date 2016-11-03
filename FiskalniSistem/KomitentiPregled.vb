@@ -33,7 +33,6 @@ Public Class KomitentiPregled
     Private Sub izmjene_Click(sender As Object, e As EventArgs) Handles izmjene.Click
         komitentIdPretraga = komitentiLista.Item(0, komitentiLista.CurrentRow.Index).Value
         KomitentForm.Show()
-        KomitentForm.MdiParent = Meni
     End Sub
 
    
