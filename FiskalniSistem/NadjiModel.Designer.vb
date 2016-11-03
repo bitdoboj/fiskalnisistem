@@ -22,6 +22,7 @@ Partial Class NadjiModel
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NadjiModel))
         Me.ModelGridView = New System.Windows.Forms.DataGridView()
         CType(Me.ModelGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -43,6 +44,7 @@ Partial Class NadjiModel
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(364, 190)
         Me.Controls.Add(Me.ModelGridView)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
         Me.Name = "NadjiModel"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent

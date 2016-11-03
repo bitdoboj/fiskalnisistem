@@ -23,6 +23,7 @@ Partial Class SettingsForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SettingsForm))
         Me.Server = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.UserName = New System.Windows.Forms.TextBox()
@@ -115,6 +116,7 @@ Partial Class SettingsForm
         Me.Controls.Add(Me.UserName)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Server)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
         Me.Name = "SettingsForm"
         Me.Text = "Settings"

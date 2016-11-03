@@ -36,7 +36,5 @@ Public Class KomitentiPregled
         KomitentForm.MdiParent = Meni
     End Sub
 
-    Private Sub servis_Click(sender As Object, e As EventArgs) Handles servis.Click
-        
-    End Sub
+   
 End Class

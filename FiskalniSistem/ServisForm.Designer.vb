@@ -22,6 +22,7 @@ Partial Class ServisForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ServisForm))
         Me.servisiLista = New System.Windows.Forms.DataGridView()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.datumServisa = New System.Windows.Forms.DateTimePicker()
@@ -183,6 +184,7 @@ Partial Class ServisForm
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.datumServisa)
         Me.Controls.Add(Me.servisiLista)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
         Me.Name = "ServisForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

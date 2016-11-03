@@ -40,12 +40,6 @@ Public Class PregledKasaForm
         KasaForm.Show()
 
     End Sub
-
-    Private Sub Pregled_Click(sender As Object, e As EventArgs) Handles Pregled.Click
-
-
-    End Sub
-
     Private Sub servis_Click(sender As Object, e As EventArgs) Handles servis.Click
         kasaIdPretraga = pregledKasa.Item(0, pregledKasa.CurrentRow.Index).Value
         ServisForm.Show()
