@@ -41,4 +41,12 @@
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
         Close()
     End Sub
+
+    Private Sub Kase_Click(sender As Object, e As EventArgs) Handles Kase.Click
+        PregledKasaForm.Show()
+    End Sub
+
+    Private Sub Komitenti_Click(sender As Object, e As EventArgs) Handles Komitenti.Click
+        KomitentiPregled.Show()
+    End Sub
 End Class
