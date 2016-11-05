@@ -36,12 +36,12 @@ Partial Class KomitentForm
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Snimi = New System.Windows.Forms.Button()
         Me.id = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.Snimi = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -173,17 +173,6 @@ Partial Class KomitentForm
         Me.Label9.Text = "PIB:"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Snimi
-        '
-        Me.Snimi.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Snimi.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Snimi.Location = New System.Drawing.Point(685, 368)
-        Me.Snimi.Name = "Snimi"
-        Me.Snimi.Size = New System.Drawing.Size(158, 42)
-        Me.Snimi.TabIndex = 7
-        Me.Snimi.Text = "Snimi"
-        Me.Snimi.UseVisualStyleBackColor = True
-        '
         'id
         '
         Me.id.AutoSize = True
@@ -206,7 +195,7 @@ Partial Class KomitentForm
         '
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox1.Image = Global.FiskalniSistem.My.Resources.Resources.folder_customer_icon
-        Me.PictureBox1.Location = New System.Drawing.Point(637, 94)
+        Me.PictureBox1.Location = New System.Drawing.Point(645, 94)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(256, 256)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -234,15 +223,32 @@ Partial Class KomitentForm
         Me.Label10.TabIndex = 22
         Me.Label10.Text = "Naziv komitenta:"
         '
+        'Snimi
+        '
+        Me.Snimi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Snimi.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Snimi.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Snimi.Image = CType(resources.GetObject("Snimi.Image"), System.Drawing.Image)
+        Me.Snimi.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Snimi.Location = New System.Drawing.Point(708, 374)
+        Me.Snimi.Name = "Snimi"
+        Me.Snimi.Padding = New System.Windows.Forms.Padding(10)
+        Me.Snimi.Size = New System.Drawing.Size(131, 53)
+        Me.Snimi.TabIndex = 31
+        Me.Snimi.Text = "Snimi"
+        Me.Snimi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Snimi.UseVisualStyleBackColor = True
+        '
         'KomitentForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(984, 462)
+        Me.Controls.Add(Me.Snimi)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Snimi)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label5)
@@ -281,10 +287,10 @@ Partial Class KomitentForm
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Snimi As System.Windows.Forms.Button
     Friend WithEvents id As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents Snimi As System.Windows.Forms.Button
 End Class

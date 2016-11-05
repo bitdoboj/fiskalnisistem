@@ -2,23 +2,6 @@
 Imports MySql.Data
 
 Public Class KomitentForm
-
-
-    Private Sub Snimi_Click(sender As Object, e As EventArgs) Handles Snimi.Click
-
-        If (Me.nazivKomitenta.Text = "") Then
-            MsgBox("Morate unijeti naziv komitenta")
-        Else
-            If komitentIdPretraga > 0 Then
-                updateKomitent(Me.id.Text, Me.nazivKomitenta.Text, Me.Telefon.Text, Me.adresa.Text, Me.brojUgovora.Text, Me.jib.Text, Me.pib.Text, Me.napomena.Text)
-            Else
-                saveKomitent(Me.nazivKomitenta.Text, Me.Telefon.Text, Me.adresa.Text, Me.brojUgovora.Text, Me.jib.Text, Me.pib.Text, Me.napomena.Text)
-            End If
-
-            clearKomitent()
-
-        End If
-    End Sub
     Public Sub clearKomitent()
         Me.nazivKomitenta.Text = ""
         Me.Telefon.Text = ""
@@ -27,6 +10,10 @@ Public Class KomitentForm
         Me.jib.Text = ""
         Me.pib.Text = ""
         Me.napomena.Text = ""
+    End Sub
+
+    Private Sub KomitentForm_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
+        komitentIdPretraga = 0
     End Sub
 
     Private Sub KomitentForm_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
@@ -55,6 +42,21 @@ Public Class KomitentForm
             Me.pib.Text = If(IsDBNull(komitent("pib")), "", komitent("pib"))
             Me.napomena.Text = If(IsDBNull(komitent("napomena")), "", komitent("napomena"))
             closeConnection()
+        End If
+    End Sub
+
+    Private Sub Snimi_Click(sender As Object, e As EventArgs) Handles Snimi.Click
+        If (Me.nazivKomitenta.Text = "") Then
+            MsgBox("Morate unijeti naziv komitenta")
+        Else
+            If komitentIdPretraga > 0 Then
+                updateKomitent(Me.id.Text, Me.nazivKomitenta.Text, Me.Telefon.Text, Me.adresa.Text, Me.brojUgovora.Text, Me.jib.Text, Me.pib.Text, Me.napomena.Text)
+            Else
+                saveKomitent(Me.nazivKomitenta.Text, Me.Telefon.Text, Me.adresa.Text, Me.brojUgovora.Text, Me.jib.Text, Me.pib.Text, Me.napomena.Text)
+            End If
+
+            clearKomitent()
+
         End If
     End Sub
 End Class

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class KomitentiPregled
+Partial Class KomitentPregled
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,11 +22,12 @@ Partial Class KomitentiPregled
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(KomitentiPregled))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(KomitentPregled))
         Me.komitentiLista = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.searchBox = New System.Windows.Forms.TextBox()
         Me.izmjene = New System.Windows.Forms.Button()
+        Me.Pregled = New System.Windows.Forms.Button()
         CType(Me.komitentiLista, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -67,11 +68,21 @@ Partial Class KomitentiPregled
         Me.izmjene.Text = "Izmjene"
         Me.izmjene.UseVisualStyleBackColor = True
         '
+        'Pregled
+        '
+        Me.Pregled.Location = New System.Drawing.Point(816, 48)
+        Me.Pregled.Name = "Pregled"
+        Me.Pregled.Size = New System.Drawing.Size(75, 23)
+        Me.Pregled.TabIndex = 7
+        Me.Pregled.Text = "Pregled"
+        Me.Pregled.UseVisualStyleBackColor = True
+        '
         'KomitentiPregled
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(984, 462)
+        Me.Controls.Add(Me.Pregled)
         Me.Controls.Add(Me.izmjene)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.searchBox)
@@ -90,4 +101,5 @@ Partial Class KomitentiPregled
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents searchBox As System.Windows.Forms.TextBox
     Friend WithEvents izmjene As System.Windows.Forms.Button
+    Friend WithEvents Pregled As System.Windows.Forms.Button
 End Class

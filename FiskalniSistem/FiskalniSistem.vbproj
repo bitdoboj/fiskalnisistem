@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <StartupObject>FiskalniSistem.My.MyApplication</StartupObject>
     <RootNamespace>FiskalniSistem</RootNamespace>
-    <AssemblyName>FiskalniSistem</AssemblyName>
+    <AssemblyName>Fiskalni Sistem</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -39,7 +39,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>FiskalniSistem.xml</DocumentationFile>
+    <DocumentationFile>Fiskalni Sistem.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -49,7 +49,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>FiskalniSistem.xml</DocumentationFile>
+    <DocumentationFile>Fiskalni Sistem.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -111,10 +111,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="KomitentiPregled.Designer.vb">
-      <DependentUpon>KomitentiPregled.vb</DependentUpon>
+    <Compile Include="KomitentPregled.Designer.vb">
+      <DependentUpon>KomitentPregled.vb</DependentUpon>
     </Compile>
-    <Compile Include="KomitentiPregled.vb">
+    <Compile Include="KomitentPregled.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Modeli\Kasa.vb" />
@@ -179,6 +179,12 @@
     <Compile Include="PregledKasaForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="PregledKomitenta.Designer.vb">
+      <DependentUpon>PregledKomitenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PregledKomitenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ServisForm.Designer.vb">
       <DependentUpon>ServisForm.vb</DependentUpon>
     </Compile>
@@ -205,8 +211,8 @@
     <EmbeddedResource Include="KomitentForm.resx">
       <DependentUpon>KomitentForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KomitentiPregled.resx">
-      <DependentUpon>KomitentiPregled.vb</DependentUpon>
+    <EmbeddedResource Include="KomitentPregled.resx">
+      <DependentUpon>KomitentPregled.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Meni.resx">
       <DependentUpon>Meni.vb</DependentUpon>
@@ -228,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PregledKasaForm.resx">
       <DependentUpon>PregledKasaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PregledKomitenta.resx">
+      <DependentUpon>PregledKomitenta.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ServisForm.resx">
       <DependentUpon>ServisForm.vb</DependentUpon>
@@ -285,6 +294,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\cash_register.ico" />
+    <Content Include="Resources\file_edit - Copy.png" />
+    <Content Include="Resources\file_edit.png" />
+    <Content Include="Resources\plus-icon-13071-16x16.ico" />
+    <Content Include="Resources\plus.png" />
+    <Content Include="Resources\Save.png" />
   </ItemGroup>
   <ItemGroup>
     <PublishFile Include="Microsoft.ReportViewer.Common">

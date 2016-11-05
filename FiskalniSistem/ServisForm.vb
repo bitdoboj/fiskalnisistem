@@ -3,6 +3,10 @@ Imports MySql.Data
 
 Public Class ServisForm
 
+    Private Sub ServisForm_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
+        kasaIdPretraga = 0
+    End Sub
+
     Private Sub ServisForm_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
         If e.KeyCode = Keys.Escape Then Me.Close()
     End Sub

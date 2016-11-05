@@ -147,6 +147,37 @@ Module Alati
 
         Return kasa
     End Function
+    Public Function getKomitent(id As Integer)
+
+        Dim komitent As New Komitent
+
+        openConnection()
+
+        Try
+
+            query = "SELECT * FROM komitent WHERE komitent.id=" & id & ";"
+            mySqlDataAdapter = New MySqlDataAdapter(query, sqlcon)
+            Dim sqlcmd As New MySqlCommand(query, sqlcon)
+            Dim sqlKomitent As MySqlClient.MySqlDataReader = sqlcmd.ExecuteReader
+
+            sqlKomitent.Read()
+            komitent.id = sqlKomitent("id")
+            komitent.nazivKomitenta = sqlKomitent("nazivKomitenta")
+            komitent.telefon = sqlKomitent("telefon")
+            komitent.adresa = sqlKomitent("adresa")
+            komitent.brojUgovora = sqlKomitent("brojUgovora")
+            komitent.jib = sqlKomitent("jib")
+            komitent.pib = sqlKomitent("pib")
+            komitent.napomena = If(IsDBNull(sqlKomitent("napomena")), "", sqlKomitent("napomena"))
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+        closeConnection()
+
+        Return komitent
+    End Function
 
     Public Sub saveServis(servis As Servis)
 

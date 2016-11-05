@@ -1,6 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 
-Public Class KomitentiPregled
+Public Class KomitentPregled
 
     Private Sub KomitentiPregled_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
         If e.KeyCode = Keys.Escape Then Me.Close()
@@ -10,7 +10,6 @@ Public Class KomitentiPregled
         fillKomitente()
     End Sub
     Private Sub fillKomitente()
-        ' openConnection()
 
         query = "SELECT komitent.id, komitent.nazivKomitenta AS Komitent, komitent.telefon AS Telefon, komitent.adresa AS Adresa, komitent.jib, komitent.pib, komitent.napomena FROM komitent WHERE (komitent.nazivKomitenta LIKE '%" & Me.searchBox.Text & "%');"
 
@@ -23,7 +22,6 @@ Public Class KomitentiPregled
         komitentiLista.Columns(4).Width = 80
         komitentiLista.Columns(6).Width = 288
 
-        'closeConnection()
     End Sub
 
     Private Sub searchBox_TextChanged(sender As Object, e As EventArgs) Handles searchBox.TextChanged
@@ -33,7 +31,13 @@ Public Class KomitentiPregled
     Private Sub izmjene_Click(sender As Object, e As EventArgs) Handles izmjene.Click
         komitentIdPretraga = komitentiLista.Item(0, komitentiLista.CurrentRow.Index).Value
         KomitentForm.Show()
+        Close()
     End Sub
 
-   
+
+    Private Sub Pregled_Click(sender As Object, e As EventArgs) Handles Pregled.Click
+        komitentIdPretraga = komitentiLista.Item(0, komitentiLista.CurrentRow.Index).Value
+        PregledKomitenta.Show()
+        Close()
+    End Sub
 End Class

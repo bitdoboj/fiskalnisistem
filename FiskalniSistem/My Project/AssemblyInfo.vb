@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("")> 
 <Assembly: AssemblyCompany("Microsoft")> 
 <Assembly: AssemblyProduct("FiskalniSistem")> 
-<Assembly: AssemblyCopyright("Copyright © Microsoft 2016")> 
+<Assembly: AssemblyCopyright("Copyright © ZTR Bit Doboj")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>

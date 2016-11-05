@@ -21,7 +21,7 @@
     End Sub
 
     Private Sub KomitentiToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KomitentiToolStripMenuItem.Click
-        KomitentiPregled.Show()
+        KomitentPregled.Show()
     End Sub
 
     Private Sub Meni_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
@@ -47,6 +47,6 @@
     End Sub
 
     Private Sub Komitenti_Click(sender As Object, e As EventArgs) Handles Komitenti.Click
-        KomitentiPregled.Show()
+        KomitentPregled.Show()
     End Sub
 End Class

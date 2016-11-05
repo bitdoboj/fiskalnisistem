@@ -22,6 +22,7 @@ Partial Class KasaForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(KasaForm))
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Snimi = New System.Windows.Forms.Button()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -66,13 +67,18 @@ Partial Class KasaForm
         '
         'Snimi
         '
-        Me.Snimi.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Snimi.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Snimi.Location = New System.Drawing.Point(670, 361)
+        Me.Snimi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Snimi.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Snimi.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Snimi.Image = CType(resources.GetObject("Snimi.Image"), System.Drawing.Image)
+        Me.Snimi.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Snimi.Location = New System.Drawing.Point(762, 358)
         Me.Snimi.Name = "Snimi"
-        Me.Snimi.Size = New System.Drawing.Size(158, 42)
+        Me.Snimi.Padding = New System.Windows.Forms.Padding(10)
+        Me.Snimi.Size = New System.Drawing.Size(131, 53)
         Me.Snimi.TabIndex = 30
         Me.Snimi.Text = "Snimi"
+        Me.Snimi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Snimi.UseVisualStyleBackColor = True
         '
         'Label9
@@ -255,9 +261,9 @@ Partial Class KasaForm
         '
         Me.Komitent.Controls.Add(Me.komitentid)
         Me.Komitent.Controls.Add(Me.nazivKomitenta)
-        Me.Komitent.Location = New System.Drawing.Point(674, 42)
+        Me.Komitent.Location = New System.Drawing.Point(640, 42)
         Me.Komitent.Name = "Komitent"
-        Me.Komitent.Size = New System.Drawing.Size(235, 58)
+        Me.Komitent.Size = New System.Drawing.Size(254, 58)
         Me.Komitent.TabIndex = 43
         Me.Komitent.TabStop = False
         Me.Komitent.Text = "Komitent"
@@ -265,7 +271,7 @@ Partial Class KasaForm
         'defiskalizacija
         '
         Me.defiskalizacija.AutoSize = True
-        Me.defiskalizacija.Location = New System.Drawing.Point(674, 269)
+        Me.defiskalizacija.Location = New System.Drawing.Point(659, 262)
         Me.defiskalizacija.Name = "defiskalizacija"
         Me.defiskalizacija.Size = New System.Drawing.Size(126, 17)
         Me.defiskalizacija.TabIndex = 44
@@ -276,9 +282,9 @@ Partial Class KasaForm
         '
         Me.Model.Controls.Add(Me.modelId)
         Me.Model.Controls.Add(Me.nazivModela)
-        Me.Model.Location = New System.Drawing.Point(673, 126)
+        Me.Model.Location = New System.Drawing.Point(639, 126)
         Me.Model.Name = "Model"
-        Me.Model.Size = New System.Drawing.Size(235, 58)
+        Me.Model.Size = New System.Drawing.Size(254, 58)
         Me.Model.TabIndex = 45
         Me.Model.TabStop = False
         Me.Model.Text = "Model"
@@ -306,30 +312,30 @@ Partial Class KasaForm
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(671, 203)
+        Me.Label10.Location = New System.Drawing.Point(647, 222)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(110, 15)
+        Me.Label10.Size = New System.Drawing.Size(113, 15)
         Me.Label10.TabIndex = 46
-        Me.Label10.Text = "Datum fiskalizacije"
+        Me.Label10.Text = "Datum fiskalizacije:"
         '
         'datumFiskalizacije
         '
         Me.datumFiskalizacije.CustomFormat = "dd/mm/yy"
-        Me.datumFiskalizacije.Location = New System.Drawing.Point(674, 222)
+        Me.datumFiskalizacije.Location = New System.Drawing.Point(766, 221)
         Me.datumFiskalizacije.MaxDate = New Date(2030, 12, 31, 0, 0, 0, 0)
         Me.datumFiskalizacije.MinDate = New Date(2008, 1, 1, 0, 0, 0, 0)
         Me.datumFiskalizacije.Name = "datumFiskalizacije"
-        Me.datumFiskalizacije.Size = New System.Drawing.Size(147, 20)
+        Me.datumFiskalizacije.Size = New System.Drawing.Size(127, 20)
         Me.datumFiskalizacije.TabIndex = 40
         '
         'datumDefiskalizacije
         '
         Me.datumDefiskalizacije.CustomFormat = "dd/mm/yy"
-        Me.datumDefiskalizacije.Location = New System.Drawing.Point(673, 315)
+        Me.datumDefiskalizacije.Location = New System.Drawing.Point(765, 307)
         Me.datumDefiskalizacije.MaxDate = New Date(2030, 12, 31, 0, 0, 0, 0)
         Me.datumDefiskalizacije.MinDate = New Date(2008, 1, 1, 0, 0, 0, 0)
         Me.datumDefiskalizacije.Name = "datumDefiskalizacije"
-        Me.datumDefiskalizacije.Size = New System.Drawing.Size(147, 20)
+        Me.datumDefiskalizacije.Size = New System.Drawing.Size(127, 20)
         Me.datumDefiskalizacije.TabIndex = 47
         Me.datumDefiskalizacije.Visible = False
         '
@@ -337,11 +343,11 @@ Partial Class KasaForm
         '
         Me.datumDefiskalizacijeLabel.AutoSize = True
         Me.datumDefiskalizacijeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.datumDefiskalizacijeLabel.Location = New System.Drawing.Point(673, 292)
+        Me.datumDefiskalizacijeLabel.Location = New System.Drawing.Point(637, 310)
         Me.datumDefiskalizacijeLabel.Name = "datumDefiskalizacijeLabel"
-        Me.datumDefiskalizacijeLabel.Size = New System.Drawing.Size(124, 15)
+        Me.datumDefiskalizacijeLabel.Size = New System.Drawing.Size(127, 15)
         Me.datumDefiskalizacijeLabel.TabIndex = 48
-        Me.datumDefiskalizacijeLabel.Text = "Datum defiskalizacije"
+        Me.datumDefiskalizacijeLabel.Text = "Datum defiskalizacije:"
         Me.datumDefiskalizacijeLabel.Visible = False
         '
         'id
@@ -358,6 +364,7 @@ Partial Class KasaForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(984, 462)
         Me.Controls.Add(Me.id)
         Me.Controls.Add(Me.datumDefiskalizacijeLabel)

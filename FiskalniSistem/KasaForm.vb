@@ -9,11 +9,21 @@ Public Class KasaForm
         NadjiModel.Show()
     End Sub
 
+    Private Sub KasaForm_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
+        komitentIdPretraga = 0
+        kasaIdPretraga = 0
+    End Sub
+
     Private Sub KasaForm_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
         If e.KeyCode = Keys.Escape Then Me.Close()
     End Sub
 
     Private Sub KasaForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        If komitentIdPretraga <> 0 Then
+            Me.komitentid.Text = komitentIdPretraga
+            Me.nazivKomitenta.Text = getNazivKomitenta(komitentIdPretraga)
+        End If
 
         If kasaIdPretraga <> 0 Then
 
