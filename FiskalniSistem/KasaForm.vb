@@ -105,7 +105,11 @@ Public Class KasaForm
         kasa.napomena = Me.napomena.Text
 
         saveKasa(kasa)
-
+        If (Me.komitentid.Text <> 0) Then
+            komitentIdPretraga = Me.komitentid.Text
+            PregledKomitenta.Show()
+            Close()
+        End If
         clearKasaForm()
     End Sub
     Private Sub clearKasaForm()

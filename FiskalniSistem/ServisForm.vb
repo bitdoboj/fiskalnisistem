@@ -5,6 +5,7 @@ Public Class ServisForm
 
     Private Sub ServisForm_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
         kasaIdPretraga = 0
+        PregledKomitenta.Show()
     End Sub
 
     Private Sub ServisForm_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
@@ -12,10 +13,20 @@ Public Class ServisForm
     End Sub
 
     Private Sub Servis_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        Dim kasa As Kasa = getKasa(kasaIdPretraga)
         Me.kasaId.Text = kasaIdPretraga
+
+        Me.brojModula.Text = kasa.brojModula
+        Me.brojKase.Text = getNazivModela(kasaIdPretraga) + "   " + kasa.brojKase
+        Me.brojTerminala.Text = kasa.brojTerminala
+        Me.pin.Text = kasa.pin
+        Me.telefon.Text = kasa.telefon
+        Me.adresaInstaliranja.Text = kasa.adresaInstaliranja
+        'Me.Model.Text = getNazivModela(kasa.modelId)
+
+        Me.Text = getNazivKomitentaByKasaId(kasaIdPretraga)
         fillServise()
-        Me.brojKase.Text = getBrojKase(kasaIdPretraga)
-        Me.nazivKomitenta.Text = getNazivKomitentaByKasaId(kasaIdPretraga)
     End Sub
 
     Private Sub fillServise()

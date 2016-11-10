@@ -32,12 +32,19 @@ Partial Class ServisForm
         Me.id = New System.Windows.Forms.Label()
         Me.kasaId = New System.Windows.Forms.Label()
         Me.brojKase = New System.Windows.Forms.Label()
-        Me.nazivKomitenta = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.brojModula = New System.Windows.Forms.Label()
+        Me.pin = New System.Windows.Forms.Label()
+        Me.simKartica = New System.Windows.Forms.Label()
+        Me.brojTerminala = New System.Windows.Forms.Label()
+        Me.telefon = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.adresaInstaliranja = New System.Windows.Forms.Label()
         CType(Me.servisiLista, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'servisiLista
@@ -45,17 +52,17 @@ Partial Class ServisForm
         Me.servisiLista.AllowUserToAddRows = False
         Me.servisiLista.AllowUserToDeleteRows = False
         Me.servisiLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.servisiLista.Location = New System.Drawing.Point(12, 153)
+        Me.servisiLista.Location = New System.Drawing.Point(12, 169)
         Me.servisiLista.Name = "servisiLista"
         Me.servisiLista.ReadOnly = True
-        Me.servisiLista.Size = New System.Drawing.Size(960, 297)
+        Me.servisiLista.Size = New System.Drawing.Size(960, 281)
         Me.servisiLista.TabIndex = 0
         '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(16, 121)
+        Me.Label10.Location = New System.Drawing.Point(604, 28)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(88, 15)
         Me.Label10.TabIndex = 48
@@ -64,18 +71,18 @@ Partial Class ServisForm
         'datumServisa
         '
         Me.datumServisa.CustomFormat = "dd/mm/yy"
-        Me.datumServisa.Location = New System.Drawing.Point(108, 121)
+        Me.datumServisa.Location = New System.Drawing.Point(609, 46)
         Me.datumServisa.MaxDate = New Date(2030, 12, 31, 0, 0, 0, 0)
         Me.datumServisa.MinDate = New Date(2008, 1, 1, 0, 0, 0, 0)
         Me.datumServisa.Name = "datumServisa"
-        Me.datumServisa.Size = New System.Drawing.Size(147, 20)
+        Me.datumServisa.Size = New System.Drawing.Size(226, 20)
         Me.datumServisa.TabIndex = 47
         '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(267, 123)
+        Me.Label8.Location = New System.Drawing.Point(604, 76)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(35, 15)
         Me.Label8.TabIndex = 49
@@ -85,24 +92,30 @@ Partial Class ServisForm
         '
         Me.opis.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.opis.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.opis.Location = New System.Drawing.Point(307, 122)
+        Me.opis.Location = New System.Drawing.Point(607, 94)
+        Me.opis.Multiline = True
         Me.opis.Name = "opis"
-        Me.opis.Size = New System.Drawing.Size(617, 21)
+        Me.opis.Size = New System.Drawing.Size(228, 53)
         Me.opis.TabIndex = 50
         '
         'Snimi
         '
-        Me.Snimi.Location = New System.Drawing.Point(930, 121)
+        Me.Snimi.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Snimi.Image = CType(resources.GetObject("Snimi.Image"), System.Drawing.Image)
+        Me.Snimi.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Snimi.Location = New System.Drawing.Point(841, 94)
         Me.Snimi.Name = "Snimi"
-        Me.Snimi.Size = New System.Drawing.Size(41, 23)
+        Me.Snimi.Padding = New System.Windows.Forms.Padding(10)
+        Me.Snimi.Size = New System.Drawing.Size(131, 53)
         Me.Snimi.TabIndex = 51
         Me.Snimi.Text = "Snimi"
+        Me.Snimi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Snimi.UseVisualStyleBackColor = True
         '
         'id
         '
         Me.id.AutoSize = True
-        Me.id.Location = New System.Drawing.Point(16, 108)
+        Me.id.Location = New System.Drawing.Point(940, 65)
         Me.id.Name = "id"
         Me.id.Size = New System.Drawing.Size(13, 13)
         Me.id.TabIndex = 52
@@ -112,7 +125,7 @@ Partial Class ServisForm
         'kasaId
         '
         Me.kasaId.AutoSize = True
-        Me.kasaId.Location = New System.Drawing.Point(47, 41)
+        Me.kasaId.Location = New System.Drawing.Point(959, 65)
         Me.kasaId.Name = "kasaId"
         Me.kasaId.Size = New System.Drawing.Size(13, 13)
         Me.kasaId.TabIndex = 53
@@ -122,59 +135,145 @@ Partial Class ServisForm
         'brojKase
         '
         Me.brojKase.AutoSize = True
-        Me.brojKase.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.brojKase.Location = New System.Drawing.Point(62, 34)
+        Me.brojKase.Font = New System.Drawing.Font("Arial Black", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.brojKase.Location = New System.Drawing.Point(112, 33)
         Me.brojKase.Name = "brojKase"
-        Me.brojKase.Size = New System.Drawing.Size(62, 25)
+        Me.brojKase.Size = New System.Drawing.Size(67, 28)
         Me.brojKase.TabIndex = 54
         Me.brojKase.Text = "Kasa"
-        '
-        'nazivKomitenta
-        '
-        Me.nazivKomitenta.AutoSize = True
-        Me.nazivKomitenta.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.nazivKomitenta.Location = New System.Drawing.Point(355, 34)
-        Me.nazivKomitenta.Name = "nazivKomitenta"
-        Me.nazivKomitenta.Size = New System.Drawing.Size(97, 25)
-        Me.nazivKomitenta.TabIndex = 55
-        Me.nazivKomitenta.Text = "Komitent"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox1.Location = New System.Drawing.Point(-7, 60)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(992, 1)
-        Me.PictureBox1.TabIndex = 56
-        Me.PictureBox1.TabStop = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(359, 65)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(75, 75)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(48, 13)
-        Me.Label1.TabIndex = 57
-        Me.Label1.Text = "Komitent"
+        Me.Label1.Size = New System.Drawing.Size(45, 15)
+        Me.Label1.TabIndex = 55
+        Me.Label1.Text = "Modul:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(64, 65)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(61, 103)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(51, 13)
-        Me.Label2.TabIndex = 58
-        Me.Label2.Text = "Broj kase"
+        Me.Label2.Size = New System.Drawing.Size(59, 15)
+        Me.Label2.TabIndex = 56
+        Me.Label2.Text = "Terminal:"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(364, 103)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(51, 15)
+        Me.Label3.TabIndex = 57
+        Me.Label3.Text = "Telefon:"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(387, 75)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(28, 15)
+        Me.Label4.TabIndex = 58
+        Me.Label4.Text = "Pin:"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(344, 131)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(71, 15)
+        Me.Label5.TabIndex = 59
+        Me.Label5.Text = "Sim kartica:"
+        '
+        'brojModula
+        '
+        Me.brojModula.AutoSize = True
+        Me.brojModula.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.brojModula.Location = New System.Drawing.Point(125, 75)
+        Me.brojModula.Name = "brojModula"
+        Me.brojModula.Size = New System.Drawing.Size(0, 15)
+        Me.brojModula.TabIndex = 60
+        '
+        'pin
+        '
+        Me.pin.AutoSize = True
+        Me.pin.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pin.Location = New System.Drawing.Point(420, 75)
+        Me.pin.Name = "pin"
+        Me.pin.Size = New System.Drawing.Size(0, 15)
+        Me.pin.TabIndex = 61
+        '
+        'simKartica
+        '
+        Me.simKartica.AutoSize = True
+        Me.simKartica.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.simKartica.Location = New System.Drawing.Point(420, 131)
+        Me.simKartica.Name = "simKartica"
+        Me.simKartica.Size = New System.Drawing.Size(0, 15)
+        Me.simKartica.TabIndex = 62
+        '
+        'brojTerminala
+        '
+        Me.brojTerminala.AutoSize = True
+        Me.brojTerminala.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.brojTerminala.Location = New System.Drawing.Point(125, 103)
+        Me.brojTerminala.Name = "brojTerminala"
+        Me.brojTerminala.Size = New System.Drawing.Size(0, 15)
+        Me.brojTerminala.TabIndex = 63
+        '
+        'telefon
+        '
+        Me.telefon.AutoSize = True
+        Me.telefon.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.telefon.Location = New System.Drawing.Point(420, 103)
+        Me.telefon.Name = "telefon"
+        Me.telefon.Size = New System.Drawing.Size(0, 15)
+        Me.telefon.TabIndex = 64
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(9, 131)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(111, 15)
+        Me.Label6.TabIndex = 65
+        Me.Label6.Text = "Adresa instaliranja:"
+        '
+        'adresaInstaliranja
+        '
+        Me.adresaInstaliranja.AutoSize = True
+        Me.adresaInstaliranja.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.adresaInstaliranja.Location = New System.Drawing.Point(125, 131)
+        Me.adresaInstaliranja.Name = "adresaInstaliranja"
+        Me.adresaInstaliranja.Size = New System.Drawing.Size(0, 15)
+        Me.adresaInstaliranja.TabIndex = 66
         '
         'ServisForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(984, 462)
+        Me.Controls.Add(Me.adresaInstaliranja)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.telefon)
+        Me.Controls.Add(Me.brojTerminala)
+        Me.Controls.Add(Me.simKartica)
+        Me.Controls.Add(Me.pin)
+        Me.Controls.Add(Me.brojModula)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.nazivKomitenta)
         Me.Controls.Add(Me.brojKase)
         Me.Controls.Add(Me.kasaId)
         Me.Controls.Add(Me.id)
@@ -190,7 +289,6 @@ Partial Class ServisForm
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Servis"
         CType(Me.servisiLista, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -204,8 +302,16 @@ Partial Class ServisForm
     Friend WithEvents id As System.Windows.Forms.Label
     Friend WithEvents kasaId As System.Windows.Forms.Label
     Friend WithEvents brojKase As System.Windows.Forms.Label
-    Friend WithEvents nazivKomitenta As System.Windows.Forms.Label
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents brojModula As System.Windows.Forms.Label
+    Friend WithEvents pin As System.Windows.Forms.Label
+    Friend WithEvents simKartica As System.Windows.Forms.Label
+    Friend WithEvents brojTerminala As System.Windows.Forms.Label
+    Friend WithEvents telefon As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents adresaInstaliranja As System.Windows.Forms.Label
 End Class

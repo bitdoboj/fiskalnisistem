@@ -45,8 +45,4 @@ Public Class PregledKasaForm
         ServisForm.Show()
         Close()
     End Sub
-
-    Private Sub Pregled_Click(sender As Object, e As EventArgs) Handles Pregled.Click
-
-    End Sub
 End Class

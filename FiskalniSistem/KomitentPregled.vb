@@ -28,16 +28,18 @@ Public Class KomitentPregled
         fillKomitente()
     End Sub
 
-    Private Sub izmjene_Click(sender As Object, e As EventArgs) Handles izmjene.Click
-        komitentIdPretraga = komitentiLista.Item(0, komitentiLista.CurrentRow.Index).Value
-        KomitentForm.Show()
-        Close()
-    End Sub
+   
 
 
     Private Sub Pregled_Click(sender As Object, e As EventArgs) Handles Pregled.Click
         komitentIdPretraga = komitentiLista.Item(0, komitentiLista.CurrentRow.Index).Value
         PregledKomitenta.Show()
-        Close()
+
+    End Sub
+
+    Private Sub Edit_Click(sender As Object, e As EventArgs) Handles Edit.Click
+        komitentIdPretraga = komitentiLista.Item(0, komitentiLista.CurrentRow.Index).Value
+        KomitentForm.Show()
+
     End Sub
 End Class
