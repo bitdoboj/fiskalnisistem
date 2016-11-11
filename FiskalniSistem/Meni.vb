@@ -15,7 +15,7 @@
         PregledKasaForm.Show()
     End Sub
 
-    Private Sub ServisToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ServisToolStripMenuItem.Click
+    Private Sub ServisToolStripMenuItem_Click(sender As Object, e As EventArgs)
         kasaIdPretraga = 3
         ServisForm.Show()
     End Sub

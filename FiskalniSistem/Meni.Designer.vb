@@ -31,12 +31,10 @@ Partial Class Meni
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.KomitentiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TestToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.KasaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.NovaKasaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PregledKasaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ServisToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Komitenti = New System.Windows.Forms.Button()
         Me.Kase = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -56,81 +54,73 @@ Partial Class Meni
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NoviKomitentToolStripMenuItem, Me.ToolStripSeparator1, Me.NoviModelToolStripMenuItem, Me.ToolStripSeparator2, Me.SettingsToolStripMenuItem, Me.KomitentiToolStripMenuItem, Me.TestToolStripMenuItem, Me.ExitToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NoviKomitentToolStripMenuItem, Me.ToolStripSeparator1, Me.NoviModelToolStripMenuItem, Me.ToolStripSeparator2, Me.SettingsToolStripMenuItem, Me.KomitentiToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'NoviKomitentToolStripMenuItem
         '
+        Me.NoviKomitentToolStripMenuItem.Image = CType(resources.GetObject("NoviKomitentToolStripMenuItem.Image"), System.Drawing.Image)
         Me.NoviKomitentToolStripMenuItem.Name = "NoviKomitentToolStripMenuItem"
-        Me.NoviKomitentToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
+        Me.NoviKomitentToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.NoviKomitentToolStripMenuItem.Text = "Novi komitent"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(147, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
         '
         'NoviModelToolStripMenuItem
         '
         Me.NoviModelToolStripMenuItem.Name = "NoviModelToolStripMenuItem"
-        Me.NoviModelToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
+        Me.NoviModelToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.NoviModelToolStripMenuItem.Text = "Modeli"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(147, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(149, 6)
         '
         'SettingsToolStripMenuItem
         '
+        Me.SettingsToolStripMenuItem.Image = CType(resources.GetObject("SettingsToolStripMenuItem.Image"), System.Drawing.Image)
         Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
-        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
+        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SettingsToolStripMenuItem.Text = "Settings"
         '
         'KomitentiToolStripMenuItem
         '
         Me.KomitentiToolStripMenuItem.Name = "KomitentiToolStripMenuItem"
-        Me.KomitentiToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
+        Me.KomitentiToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.KomitentiToolStripMenuItem.Text = "Komitenti"
-        '
-        'TestToolStripMenuItem
-        '
-        Me.TestToolStripMenuItem.Name = "TestToolStripMenuItem"
-        Me.TestToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
-        Me.TestToolStripMenuItem.Text = "Test"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'KasaToolStripMenuItem1
         '
-        Me.KasaToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NovaKasaToolStripMenuItem, Me.PregledKasaToolStripMenuItem1, Me.ServisToolStripMenuItem})
+        Me.KasaToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NovaKasaToolStripMenuItem, Me.PregledKasaToolStripMenuItem1})
         Me.KasaToolStripMenuItem1.Name = "KasaToolStripMenuItem1"
         Me.KasaToolStripMenuItem1.Size = New System.Drawing.Size(43, 20)
         Me.KasaToolStripMenuItem1.Text = "Kasa"
         '
         'NovaKasaToolStripMenuItem
         '
+        Me.NovaKasaToolStripMenuItem.Image = CType(resources.GetObject("NovaKasaToolStripMenuItem.Image"), System.Drawing.Image)
         Me.NovaKasaToolStripMenuItem.Name = "NovaKasaToolStripMenuItem"
-        Me.NovaKasaToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
+        Me.NovaKasaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.NovaKasaToolStripMenuItem.Text = "Nova kasa"
         '
         'PregledKasaToolStripMenuItem1
         '
+        Me.PregledKasaToolStripMenuItem1.Image = CType(resources.GetObject("PregledKasaToolStripMenuItem1.Image"), System.Drawing.Image)
         Me.PregledKasaToolStripMenuItem1.Name = "PregledKasaToolStripMenuItem1"
-        Me.PregledKasaToolStripMenuItem1.Size = New System.Drawing.Size(140, 22)
+        Me.PregledKasaToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.PregledKasaToolStripMenuItem1.Text = "Pregled kasa"
-        '
-        'ServisToolStripMenuItem
-        '
-        Me.ServisToolStripMenuItem.Name = "ServisToolStripMenuItem"
-        Me.ServisToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
-        Me.ServisToolStripMenuItem.Text = "Servis"
         '
         'Komitenti
         '
@@ -203,14 +193,12 @@ Partial Class Meni
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents FileToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents NoviKomitentToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents TestToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents NoviModelToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents ToolStripSeparator2 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents KasaToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents NovaKasaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PregledKasaToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ServisToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents KomitentiToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SettingsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem

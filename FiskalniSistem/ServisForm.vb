@@ -23,8 +23,6 @@ Public Class ServisForm
         Me.pin.Text = kasa.pin
         Me.telefon.Text = kasa.telefon
         Me.adresaInstaliranja.Text = kasa.adresaInstaliranja
-        'Me.Model.Text = getNazivModela(kasa.modelId)
-
         Me.Text = getNazivKomitentaByKasaId(kasaIdPretraga)
         fillServise()
     End Sub

@@ -17,9 +17,8 @@
         My.Settings.ServerName = Me.Server.Text
         My.Settings.User = Me.UserName.Text
         My.Settings.Password = Me.Password.Text
-    End Sub
 
-    Private Sub ReportViewer1_Load(sender As Object, e As EventArgs)
-
+        MsgBox("Aplikacija se mora zatvoriti", MsgBoxStyle.OkOnly + MsgBoxStyle.Critical, "PODEŠAVANJA")
+        Meni.Close()
     End Sub
 End Class

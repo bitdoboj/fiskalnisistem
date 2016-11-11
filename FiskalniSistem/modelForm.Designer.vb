@@ -41,25 +41,25 @@ Partial Class modelForm
         '
         Me.nazivModela.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.nazivModela.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.nazivModela.Location = New System.Drawing.Point(15, 50)
+        Me.nazivModela.Location = New System.Drawing.Point(13, 51)
         Me.nazivModela.Name = "nazivModela"
-        Me.nazivModela.Size = New System.Drawing.Size(198, 21)
+        Me.nazivModela.Size = New System.Drawing.Size(269, 21)
         Me.nazivModela.TabIndex = 0
         '
         'opis
         '
         Me.opis.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.opis.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.opis.Location = New System.Drawing.Point(15, 109)
+        Me.opis.Location = New System.Drawing.Point(13, 106)
         Me.opis.Multiline = True
         Me.opis.Name = "opis"
-        Me.opis.Size = New System.Drawing.Size(198, 111)
+        Me.opis.Size = New System.Drawing.Size(269, 91)
         Me.opis.TabIndex = 1
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(79, 30)
+        Me.Label1.Location = New System.Drawing.Point(13, 31)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(71, 13)
         Me.Label1.TabIndex = 2
@@ -68,7 +68,7 @@ Partial Class modelForm
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(100, 89)
+        Me.Label2.Location = New System.Drawing.Point(13, 90)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(28, 13)
         Me.Label2.TabIndex = 3
@@ -76,11 +76,16 @@ Partial Class modelForm
         '
         'Snimi
         '
-        Me.Snimi.Location = New System.Drawing.Point(116, 255)
+        Me.Snimi.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Snimi.Image = CType(resources.GetObject("Snimi.Image"), System.Drawing.Image)
+        Me.Snimi.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Snimi.Location = New System.Drawing.Point(151, 219)
         Me.Snimi.Name = "Snimi"
-        Me.Snimi.Size = New System.Drawing.Size(100, 37)
+        Me.Snimi.Padding = New System.Windows.Forms.Padding(10)
+        Me.Snimi.Size = New System.Drawing.Size(131, 53)
         Me.Snimi.TabIndex = 8
         Me.Snimi.Text = "Snimi"
+        Me.Snimi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Snimi.UseVisualStyleBackColor = True
         '
         'ModeliDataGridView
@@ -89,7 +94,7 @@ Partial Class modelForm
         Me.ModeliDataGridView.AllowUserToDeleteRows = False
         Me.ModeliDataGridView.AllowUserToOrderColumns = True
         Me.ModeliDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.ModeliDataGridView.Location = New System.Drawing.Point(383, 87)
+        Me.ModeliDataGridView.Location = New System.Drawing.Point(345, 54)
         Me.ModeliDataGridView.Name = "ModeliDataGridView"
         Me.ModeliDataGridView.ReadOnly = True
         Me.ModeliDataGridView.Size = New System.Drawing.Size(503, 279)
@@ -99,7 +104,7 @@ Partial Class modelForm
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(545, 61)
+        Me.Label5.Location = New System.Drawing.Point(342, 33)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(179, 15)
         Me.Label5.TabIndex = 13
@@ -113,26 +118,31 @@ Partial Class modelForm
         Me.GroupBox1.Controls.Add(Me.nazivModela)
         Me.GroupBox1.Controls.Add(Me.opis)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(93, 57)
+        Me.GroupBox1.Location = New System.Drawing.Point(25, 44)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(230, 309)
+        Me.GroupBox1.Size = New System.Drawing.Size(295, 289)
         Me.GroupBox1.TabIndex = 21
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Opsti podaci"
         '
         'Add
         '
-        Me.Add.Location = New System.Drawing.Point(10, 255)
+        Me.Add.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Add.Image = CType(resources.GetObject("Add.Image"), System.Drawing.Image)
+        Me.Add.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Add.Location = New System.Drawing.Point(13, 219)
         Me.Add.Name = "Add"
-        Me.Add.Size = New System.Drawing.Size(100, 37)
+        Me.Add.Padding = New System.Windows.Forms.Padding(6)
+        Me.Add.Size = New System.Drawing.Size(131, 53)
         Me.Add.TabIndex = 9
-        Me.Add.Text = "Add"
+        Me.Add.Text = "Novi model"
+        Me.Add.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Add.UseVisualStyleBackColor = True
         '
         'id
         '
         Me.id.AutoSize = True
-        Me.id.Location = New System.Drawing.Point(353, 369)
+        Me.id.Location = New System.Drawing.Point(285, 336)
         Me.id.Name = "id"
         Me.id.Size = New System.Drawing.Size(0, 13)
         Me.id.TabIndex = 22
@@ -142,7 +152,8 @@ Partial Class modelForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(984, 462)
+        Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.ClientSize = New System.Drawing.Size(882, 365)
         Me.Controls.Add(Me.id)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.ModeliDataGridView)
