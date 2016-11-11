@@ -1,7 +1,7 @@
 ﻿Public Class Meni
 
     Private Sub NoviKomitentToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NoviKomitentToolStripMenuItem.Click
-
+        komitentIdPretraga = 0
         KomitentForm.Show()
     End Sub
     Private Sub NoviModelToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NoviModelToolStripMenuItem.Click

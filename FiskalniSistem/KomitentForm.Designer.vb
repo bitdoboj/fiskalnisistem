@@ -25,7 +25,6 @@ Partial Class KomitentForm
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(KomitentForm))
         Me.nazivKomitenta = New System.Windows.Forms.TextBox()
         Me.pib = New System.Windows.Forms.TextBox()
-        Me.brojUgovora = New System.Windows.Forms.TextBox()
         Me.adresa = New System.Windows.Forms.TextBox()
         Me.Telefon = New System.Windows.Forms.TextBox()
         Me.jib = New System.Windows.Forms.TextBox()
@@ -33,7 +32,6 @@ Partial Class KomitentForm
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.id = New System.Windows.Forms.Label()
@@ -63,15 +61,6 @@ Partial Class KomitentForm
         Me.pib.Name = "pib"
         Me.pib.Size = New System.Drawing.Size(377, 21)
         Me.pib.TabIndex = 4
-        '
-        'brojUgovora
-        '
-        Me.brojUgovora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.brojUgovora.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.brojUgovora.Location = New System.Drawing.Point(138, 290)
-        Me.brojUgovora.Name = "brojUgovora"
-        Me.brojUgovora.Size = New System.Drawing.Size(377, 21)
-        Me.brojUgovora.TabIndex = 5
         '
         'adresa
         '
@@ -104,10 +93,10 @@ Partial Class KomitentForm
         '
         Me.napomena.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.napomena.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.napomena.Location = New System.Drawing.Point(138, 330)
+        Me.napomena.Location = New System.Drawing.Point(138, 296)
         Me.napomena.Multiline = True
         Me.napomena.Name = "napomena"
-        Me.napomena.Size = New System.Drawing.Size(377, 79)
+        Me.napomena.Size = New System.Drawing.Size(377, 113)
         Me.napomena.TabIndex = 6
         '
         'Label3
@@ -142,21 +131,11 @@ Partial Class KomitentForm
         Me.Label5.TabIndex = 12
         Me.Label5.Text = "Adresa:"
         '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(53, 292)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(79, 15)
-        Me.Label7.TabIndex = 14
-        Me.Label7.Text = "Broj ugovora:"
-        '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(22, 228)
+        Me.Label8.Location = New System.Drawing.Point(22, 194)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(72, 15)
         Me.Label8.TabIndex = 15
@@ -250,7 +229,6 @@ Partial Class KomitentForm
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -258,7 +236,6 @@ Partial Class KomitentForm
         Me.Controls.Add(Me.jib)
         Me.Controls.Add(Me.Telefon)
         Me.Controls.Add(Me.adresa)
-        Me.Controls.Add(Me.brojUgovora)
         Me.Controls.Add(Me.pib)
         Me.Controls.Add(Me.nazivKomitenta)
         Me.Controls.Add(Me.GroupBox1)
@@ -276,7 +253,6 @@ Partial Class KomitentForm
     End Sub
     Friend WithEvents nazivKomitenta As System.Windows.Forms.TextBox
     Friend WithEvents pib As System.Windows.Forms.TextBox
-    Friend WithEvents brojUgovora As System.Windows.Forms.TextBox
     Friend WithEvents adresa As System.Windows.Forms.TextBox
     Friend WithEvents Telefon As System.Windows.Forms.TextBox
     Friend WithEvents jib As System.Windows.Forms.TextBox
@@ -284,7 +260,6 @@ Partial Class KomitentForm
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents id As System.Windows.Forms.Label

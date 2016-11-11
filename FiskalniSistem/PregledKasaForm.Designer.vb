@@ -38,10 +38,10 @@ Partial Class PregledKasaForm
         Me.pregledKasa.AllowUserToDeleteRows = False
         Me.pregledKasa.AllowUserToOrderColumns = True
         Me.pregledKasa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.pregledKasa.Location = New System.Drawing.Point(12, 74)
+        Me.pregledKasa.Location = New System.Drawing.Point(12, 107)
         Me.pregledKasa.Name = "pregledKasa"
         Me.pregledKasa.ReadOnly = True
-        Me.pregledKasa.Size = New System.Drawing.Size(960, 376)
+        Me.pregledKasa.Size = New System.Drawing.Size(960, 343)
         Me.pregledKasa.TabIndex = 0
         '
         'searchBox
@@ -63,35 +63,51 @@ Partial Class PregledKasaForm
         '
         'izmjene
         '
-        Me.izmjene.Location = New System.Drawing.Point(896, 47)
+        Me.izmjene.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.izmjene.Image = CType(resources.GetObject("izmjene.Image"), System.Drawing.Image)
+        Me.izmjene.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.izmjene.Location = New System.Drawing.Point(841, 48)
         Me.izmjene.Name = "izmjene"
-        Me.izmjene.Size = New System.Drawing.Size(75, 23)
+        Me.izmjene.Padding = New System.Windows.Forms.Padding(10)
+        Me.izmjene.Size = New System.Drawing.Size(131, 53)
         Me.izmjene.TabIndex = 3
         Me.izmjene.Text = "Izmjene"
+        Me.izmjene.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.izmjene.UseVisualStyleBackColor = True
         '
         'Pregled
         '
-        Me.Pregled.Location = New System.Drawing.Point(818, 47)
+        Me.Pregled.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Pregled.Image = CType(resources.GetObject("Pregled.Image"), System.Drawing.Image)
+        Me.Pregled.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Pregled.Location = New System.Drawing.Point(704, 48)
         Me.Pregled.Name = "Pregled"
-        Me.Pregled.Size = New System.Drawing.Size(75, 23)
+        Me.Pregled.Padding = New System.Windows.Forms.Padding(10)
+        Me.Pregled.Size = New System.Drawing.Size(131, 53)
         Me.Pregled.TabIndex = 4
         Me.Pregled.Text = "Pregled"
+        Me.Pregled.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Pregled.UseVisualStyleBackColor = True
         '
         'servis
         '
-        Me.servis.Location = New System.Drawing.Point(740, 47)
+        Me.servis.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.servis.Image = CType(resources.GetObject("servis.Image"), System.Drawing.Image)
+        Me.servis.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.servis.Location = New System.Drawing.Point(567, 48)
         Me.servis.Name = "servis"
-        Me.servis.Size = New System.Drawing.Size(75, 23)
+        Me.servis.Padding = New System.Windows.Forms.Padding(10)
+        Me.servis.Size = New System.Drawing.Size(131, 53)
         Me.servis.TabIndex = 5
         Me.servis.Text = "Servis"
+        Me.servis.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.servis.UseVisualStyleBackColor = True
         '
         'PregledKasaForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(984, 462)
         Me.Controls.Add(Me.servis)
         Me.Controls.Add(Me.Pregled)

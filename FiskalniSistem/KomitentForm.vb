@@ -6,7 +6,6 @@ Public Class KomitentForm
         Me.nazivKomitenta.Text = ""
         Me.Telefon.Text = ""
         Me.adresa.Text = ""
-        Me.brojUgovora.Text = ""
         Me.jib.Text = ""
         Me.pib.Text = ""
         Me.napomena.Text = ""
@@ -37,7 +36,6 @@ Public Class KomitentForm
             Me.nazivKomitenta.Text = If(IsDBNull(komitent("nazivKomitenta")), "", komitent("nazivKomitenta"))
             Me.Telefon.Text = If(IsDBNull(komitent("telefon")), "", komitent("telefon"))
             Me.adresa.Text = If(IsDBNull(komitent("adresa")), "", komitent("adresa"))
-            Me.brojUgovora.Text = If(IsDBNull(komitent("brojUgovora")), "", komitent("brojUgovora"))
             Me.jib.Text = If(IsDBNull(komitent("jib")), "", komitent("jib"))
             Me.pib.Text = If(IsDBNull(komitent("pib")), "", komitent("pib"))
             Me.napomena.Text = If(IsDBNull(komitent("napomena")), "", komitent("napomena"))
@@ -50,9 +48,9 @@ Public Class KomitentForm
             MsgBox("Morate unijeti naziv komitenta")
         Else
             If komitentIdPretraga > 0 Then
-                updateKomitent(Me.id.Text, Me.nazivKomitenta.Text, Me.Telefon.Text, Me.adresa.Text, Me.brojUgovora.Text, Me.jib.Text, Me.pib.Text, Me.napomena.Text)
+                updateKomitent(Me.id.Text, Me.nazivKomitenta.Text, Me.Telefon.Text, Me.adresa.Text, Me.jib.Text, Me.pib.Text, Me.napomena.Text)
             Else
-                saveKomitent(Me.nazivKomitenta.Text, Me.Telefon.Text, Me.adresa.Text, Me.brojUgovora.Text, Me.jib.Text, Me.pib.Text, Me.napomena.Text)
+                saveKomitent(Me.nazivKomitenta.Text, Me.Telefon.Text, Me.adresa.Text, Me.jib.Text, Me.pib.Text, Me.napomena.Text)
             End If
 
             clearKomitent()

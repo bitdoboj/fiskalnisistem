@@ -10,9 +10,14 @@
     Public telefon As String
     Public adresaInstaliranja As String
     Public modelId As Integer
-    Public defiskalicacija As Integer
+    Public defiskalizacija As Integer
     Public datumDefiskalizacije As String
     Public datumFiskalizacije As String
+    Public dokumentacijaPoslata As Integer
+    Public datumSlanjaDokumentacije As String
+    Public fiskalnaPlomba As String
+    Public programskaPlomba As String
+    Public brojUgovora As String
     Public napomena As String
 
 

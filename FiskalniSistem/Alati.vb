@@ -35,18 +35,18 @@ Module Alati
         End Try
     End Sub
 
-    Public Sub saveKomitent(nazivKomitenta As String, telefon As String, Adresa As String, brojUgovora As String, jib As String, pib As String, napomena As String)
+    Public Sub saveKomitent(nazivKomitenta As String, telefon As String, Adresa As String, jib As String, pib As String, napomena As String)
 
-        query = "INSERT INTO Komitent (nazivKomitenta, telefon, adresa, brojUgovora, jib, pib, napomena) " +
-                "VALUES ('" & nazivKomitenta & "', '" & telefon & "', '" & Adresa & "', '" & brojUgovora & "', '" & jib & "', '" & pib & "','" & napomena & "')"
+        query = "INSERT INTO Komitent (nazivKomitenta, telefon, adresa, jib, pib, napomena) " +
+                "VALUES ('" & nazivKomitenta & "', '" & telefon & "', '" & Adresa & "',  '" & jib & "', '" & pib & "','" & napomena & "')"
 
         runSQLCommand()
 
     End Sub
 
-    Public Sub updateKomitent(id As Integer, nazivKomitenta As String, telefon As String, adresa As String, brojUgovora As String, jib As String, pib As String, napomena As String)
+    Public Sub updateKomitent(id As Integer, nazivKomitenta As String, telefon As String, adresa As String, jib As String, pib As String, napomena As String)
 
-        query = "UPDATE Komitent SET nazivKomitenta='" & nazivKomitenta & "', telefon='" & telefon & "',  adresa='" & adresa & "',  brojUgovora='" & brojUgovora & "',  jib='" & jib & "',  pib='" & pib & "',  napomena='" & napomena & "' WHERE id='" & id & "'"
+        query = "UPDATE Komitent SET nazivKomitenta='" & nazivKomitenta & "', telefon='" & telefon & "',  adresa='" & adresa & "',  jib='" & jib & "',  pib='" & pib & "',  napomena='" & napomena & "' WHERE id='" & id & "'"
 
         runSQLCommand()
 
@@ -74,8 +74,11 @@ Module Alati
             updateKasa(kasa)
             Exit Sub
         End If
-        query = "INSERT INTO Kasa (brojKase, komitentId, brojModula, brojTerminala, simKartica, pin, telefon, adresaInstaliranja, modelId, defiskalicacija, datumDefiskalizacije, datumFiskalizacije, napomena) " +
-                "VALUES ('" & kasa.brojKase & "', '" & kasa.komitentId & "', '" & kasa.brojModula & "', '" & kasa.brojTerminala & "', '" & kasa.simKartica & "', '" & kasa.pin & "', '" & kasa.telefon & "', '" & kasa.adresaInstaliranja & "', '" & kasa.modelId & "', '" & kasa.defiskalicacija & "', '" & kasa.datumDefiskalizacije & "', '" & kasa.datumFiskalizacije & "','" & kasa.napomena & "')"
+        query = "INSERT INTO Kasa (" +
+                "brojKase, komitentId, brojModula, " +
+                "brojTerminala, simKartica, pin, telefon, adresaInstaliranja, " +
+                "modelId, defiskalizacija, datumDefiskalizacije, dokumentacijaPoslata, datumSlanjaDokumentacije, datumFiskalizacije, fiskalnaPlomba, programskaPlomba, brojUgovora, napomena) " +
+                "VALUES ('" & kasa.brojKase & "', '" & kasa.komitentId & "', '" & kasa.brojModula & "', '" & kasa.brojTerminala & "', '" & kasa.simKartica & "', '" & kasa.pin & "', '" & kasa.telefon & "', '" & kasa.adresaInstaliranja & "', '" & kasa.modelId & "', '" & kasa.defiskalizacija & "', '" & kasa.datumDefiskalizacije & "', '" & kasa.dokumentacijaPoslata & "', '" & kasa.datumSlanjaDokumentacije & "', '" & kasa.datumFiskalizacije & "', '" & kasa.fiskalnaPlomba & "', '" & kasa.programskaPlomba & "', '" & kasa.brojUgovora & "','" & kasa.napomena & "')"
 
         runSQLCommand()
 
@@ -93,8 +96,14 @@ Module Alati
                     "telefon='" & kasa.telefon & "', " +
                     "adresaInstaliranja='" & kasa.adresaInstaliranja & "', " +
                     "modelId='" & kasa.modelId & "', " +
-                    "defiskalicacija='" & kasa.defiskalicacija & "', " +
+                    "datumFiskalizacije='" & kasa.datumFiskalizacije & "', " +
+                    "dokumentacijaPoslata='" & kasa.dokumentacijaPoslata & "', " +
+                    "datumSlanjaDokumentacije='" & kasa.datumSlanjaDokumentacije & "', " +
+                    "defiskalicacija='" & kasa.defiskalizacija & "', " +
                     "datumDefiskalizacije='" & kasa.datumDefiskalizacije & "', " +
+                    "fiskalnaPlomba='" & kasa.fiskalnaPlomba & "', " +
+                    "programskaPlomba='" & kasa.programskaPlomba & "', " +
+                    "brojUgovora='" & kasa.brojUgovora & "', " +
                     "napomena='" & kasa.napomena & "' " +
                 "WHERE id='" & kasa.id & "'"
 
@@ -134,7 +143,7 @@ Module Alati
             kasa.telefon = sqlKasa("telefon")
             kasa.adresaInstaliranja = sqlKasa("adresaInstaliranja")
             kasa.modelId = sqlKasa("modelId")
-            kasa.defiskalicacija = sqlKasa("defiskalicacija")
+            kasa.defiskalizacija = sqlKasa("defiskalizacija")
             kasa.datumDefiskalizacije = If(IsDBNull(sqlKasa("datumDefiskalizacije")), "", sqlKasa("datumDefiskalizacije"))
             kasa.datumFiskalizacije = If(IsDBNull(sqlKasa("datumFiskalizacije")), "", sqlKasa("datumFiskalizacije"))
             kasa.napomena = If(IsDBNull(sqlKasa("napomena")), "", sqlKasa("napomena"))
@@ -165,7 +174,6 @@ Module Alati
             komitent.nazivKomitenta = sqlKomitent("nazivKomitenta")
             komitent.telefon = sqlKomitent("telefon")
             komitent.adresa = sqlKomitent("adresa")
-            komitent.brojUgovora = sqlKomitent("brojUgovora")
             komitent.jib = sqlKomitent("jib")
             komitent.pib = sqlKomitent("pib")
             komitent.napomena = If(IsDBNull(sqlKomitent("napomena")), "", sqlKomitent("napomena"))
@@ -277,6 +285,7 @@ Module Alati
             dataSet = New DataSet
             mySqlDataAdapter = New MySqlDataAdapter(query, sqlcon)
             mySqlDataAdapter.Fill(dataSet)
+
 
         Catch ex As Exception
             MsgBox(ex.Message)

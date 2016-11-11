@@ -41,12 +41,13 @@ Public Class KasaForm
             Me.adresaInstaliranja.Text = kasa.adresaInstaliranja
             Me.modelId.Text = kasa.modelId
             Me.nazivModela.Text = getNazivModela(kasa.modelId)
-            Me.defiskalizacija.CheckState = If(kasa.defiskalicacija = -1, 1, 0)
+            Me.defiskalizacija.CheckState = If(kasa.defiskalizacija = -1, 1, 0)
             Me.datumDefiskalizacije.Text = kasa.datumDefiskalizacije
             Me.datumFiskalizacije.Text = kasa.datumFiskalizacije
+            Me.brojUgovora.Text = kasa.brojUgovora
             Me.napomena.Text = kasa.napomena
         End If
-
+        dokumentacijaPoslataCheck()
         defiskalizacijaCheck()
     End Sub
     Private Sub defiskalizacijaCheck()
@@ -57,6 +58,15 @@ Public Class KasaForm
         Else
             datumDefiskalizacije.Visible = False
             datumDefiskalizacijeLabel.Visible = False
+        End If
+    End Sub
+    Private Sub dokumentacijaPoslataCheck()
+        If Me.dokumentacijaPoslata.Checked Then
+            datumSlanjaLabel.Visible = True
+            datumSlanjaDokumentacije.Visible = True
+        Else
+            datumSlanjaLabel.Visible = False
+            datumSlanjaDokumentacije.Visible = False
         End If
     End Sub
 
@@ -96,12 +106,25 @@ Public Class KasaForm
         kasa.telefon = Me.telefon.Text
         kasa.adresaInstaliranja = Me.adresaInstaliranja.Text
         kasa.modelId = Me.modelId.Text
+
+        kasa.defiskalizacija = Me.defiskalizacija.CheckState
         If Me.defiskalizacija.CheckState = 1 Then
             kasa.datumDefiskalizacije = FormatDateTime(Me.datumDefiskalizacije.Value, DateFormat.ShortDate)
         Else
             kasa.datumDefiskalizacije = ""
         End If
+
+        kasa.dokumentacijaPoslata = Me.dokumentacijaPoslata.CheckState
+        If dokumentacijaPoslata.CheckState = 1 Then
+            kasa.datumSlanjaDokumentacije = FormatDateTime(Me.datumSlanjaDokumentacije.Value, DateFormat.ShortDate)
+        Else
+            kasa.datumSlanjaDokumentacije = ""
+        End If
+
+        kasa.fiskalnaPlomba = Me.fiskalnaPlomba.Text
+        kasa.programskaPlomba = Me.programskaPlomba.Text
         kasa.datumFiskalizacije = FormatDateTime(Me.datumFiskalizacije.Value, DateFormat.ShortDate)
+        kasa.brojUgovora = Me.brojUgovora.Text
         kasa.napomena = Me.napomena.Text
 
         saveKasa(kasa)
@@ -126,6 +149,11 @@ Public Class KasaForm
         Me.modelId.Text = ""
         Me.nazivModela.Text = "Model"
         Me.defiskalizacija.CheckState = False
+        Me.brojUgovora.Text = ""
         Me.napomena.Text = ""
+    End Sub
+
+    Private Sub dokumentacijaPoslata_CheckedChanged(sender As Object, e As EventArgs) Handles dokumentacijaPoslata.CheckedChanged
+        dokumentacijaPoslataCheck()
     End Sub
 End Class

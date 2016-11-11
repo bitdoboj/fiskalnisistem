@@ -52,10 +52,10 @@ Partial Class ServisForm
         Me.servisiLista.AllowUserToAddRows = False
         Me.servisiLista.AllowUserToDeleteRows = False
         Me.servisiLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.servisiLista.Location = New System.Drawing.Point(12, 169)
+        Me.servisiLista.Location = New System.Drawing.Point(12, 197)
         Me.servisiLista.Name = "servisiLista"
         Me.servisiLista.ReadOnly = True
-        Me.servisiLista.Size = New System.Drawing.Size(960, 281)
+        Me.servisiLista.Size = New System.Drawing.Size(960, 253)
         Me.servisiLista.TabIndex = 0
         '
         'Label10

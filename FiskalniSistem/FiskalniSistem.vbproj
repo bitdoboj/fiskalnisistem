@@ -301,6 +301,7 @@
     <Content Include="Resources\plus-icon-13071-16x16.ico" />
     <Content Include="Resources\plus.png" />
     <Content Include="Resources\Save.png" />
+    <Content Include="Resources\settings.png" />
   </ItemGroup>
   <ItemGroup>
     <PublishFile Include="Microsoft.ReportViewer.Common">
