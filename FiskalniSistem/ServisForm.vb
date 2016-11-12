@@ -24,6 +24,7 @@ Public Class ServisForm
         Me.telefon.Text = kasa.telefon
         Me.adresaInstaliranja.Text = kasa.adresaInstaliranja
         Me.Text = getNazivKomitentaByKasaId(kasaIdPretraga)
+        komitentIdPretraga = kasa.komitentId
         fillServise()
     End Sub
 
