@@ -62,6 +62,10 @@ Partial Class KasaForm
         Me.dokumentacijaPoslata = New System.Windows.Forms.CheckBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.brojUgovora = New System.Windows.Forms.TextBox()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.ibsa = New System.Windows.Forms.TextBox()
+        Me.fLink = New System.Windows.Forms.TextBox()
+        Me.Label15 = New System.Windows.Forms.Label()
         Me.Komitent.SuspendLayout()
         Me.Model.SuspendLayout()
         Me.SuspendLayout()
@@ -157,11 +161,11 @@ Partial Class KasaForm
         '
         Me.napomena.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.napomena.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.napomena.Location = New System.Drawing.Point(179, 311)
+        Me.napomena.Location = New System.Drawing.Point(179, 335)
         Me.napomena.Multiline = True
         Me.napomena.Name = "napomena"
-        Me.napomena.Size = New System.Drawing.Size(349, 100)
-        Me.napomena.TabIndex = 10
+        Me.napomena.Size = New System.Drawing.Size(349, 76)
+        Me.napomena.TabIndex = 12
         '
         'simKartica
         '
@@ -223,7 +227,7 @@ Partial Class KasaForm
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(101, 311)
+        Me.Label8.Location = New System.Drawing.Point(101, 331)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(72, 15)
         Me.Label8.TabIndex = 15
@@ -457,12 +461,54 @@ Partial Class KasaForm
         Me.brojUgovora.Size = New System.Drawing.Size(128, 21)
         Me.brojUgovora.TabIndex = 4
         '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(353, 302)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(36, 15)
+        Me.Label14.TabIndex = 62
+        Me.Label14.Text = "IBSA:"
+        '
+        'ibsa
+        '
+        Me.ibsa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ibsa.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ibsa.Location = New System.Drawing.Point(391, 300)
+        Me.ibsa.Name = "ibsa"
+        Me.ibsa.Size = New System.Drawing.Size(137, 21)
+        Me.ibsa.TabIndex = 11
+        '
+        'fLink
+        '
+        Me.fLink.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.fLink.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.fLink.Location = New System.Drawing.Point(180, 300)
+        Me.fLink.Name = "fLink"
+        Me.fLink.Size = New System.Drawing.Size(167, 21)
+        Me.fLink.TabIndex = 10
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(129, 302)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(44, 15)
+        Me.Label15.TabIndex = 61
+        Me.Label15.Text = "F-Link:"
+        '
         'KasaForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(984, 462)
+        Me.Controls.Add(Me.Label14)
+        Me.Controls.Add(Me.ibsa)
+        Me.Controls.Add(Me.fLink)
+        Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.brojUgovora)
         Me.Controls.Add(Me.dokumentacijaPoslata)
@@ -549,4 +595,8 @@ Partial Class KasaForm
     Friend WithEvents dokumentacijaPoslata As System.Windows.Forms.CheckBox
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents brojUgovora As System.Windows.Forms.TextBox
+    Friend WithEvents Label14 As System.Windows.Forms.Label
+    Friend WithEvents ibsa As System.Windows.Forms.TextBox
+    Friend WithEvents fLink As System.Windows.Forms.TextBox
+    Friend WithEvents Label15 As System.Windows.Forms.Label
 End Class

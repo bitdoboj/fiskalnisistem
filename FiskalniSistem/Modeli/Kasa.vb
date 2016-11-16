@@ -18,6 +18,8 @@
     Public fiskalnaPlomba As String
     Public programskaPlomba As String
     Public brojUgovora As String
+    Public fLink As String
+    Public ibsa As String
     Public napomena As String
 
 

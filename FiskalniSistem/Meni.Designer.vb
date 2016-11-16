@@ -69,36 +69,36 @@ Partial Class Meni
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(147, 6)
         '
         'NoviModelToolStripMenuItem
         '
         Me.NoviModelToolStripMenuItem.Name = "NoviModelToolStripMenuItem"
-        Me.NoviModelToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.NoviModelToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
         Me.NoviModelToolStripMenuItem.Text = "Modeli"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(147, 6)
         '
         'SettingsToolStripMenuItem
         '
         Me.SettingsToolStripMenuItem.Image = CType(resources.GetObject("SettingsToolStripMenuItem.Image"), System.Drawing.Image)
         Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
-        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
         Me.SettingsToolStripMenuItem.Text = "Settings"
         '
         'KomitentiToolStripMenuItem
         '
         Me.KomitentiToolStripMenuItem.Name = "KomitentiToolStripMenuItem"
-        Me.KomitentiToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.KomitentiToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
         Me.KomitentiToolStripMenuItem.Text = "Komitenti"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'KasaToolStripMenuItem1
@@ -112,14 +112,14 @@ Partial Class Meni
         '
         Me.NovaKasaToolStripMenuItem.Image = CType(resources.GetObject("NovaKasaToolStripMenuItem.Image"), System.Drawing.Image)
         Me.NovaKasaToolStripMenuItem.Name = "NovaKasaToolStripMenuItem"
-        Me.NovaKasaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.NovaKasaToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
         Me.NovaKasaToolStripMenuItem.Text = "Nova kasa"
         '
         'PregledKasaToolStripMenuItem1
         '
         Me.PregledKasaToolStripMenuItem1.Image = CType(resources.GetObject("PregledKasaToolStripMenuItem1.Image"), System.Drawing.Image)
         Me.PregledKasaToolStripMenuItem1.Name = "PregledKasaToolStripMenuItem1"
-        Me.PregledKasaToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.PregledKasaToolStripMenuItem1.Size = New System.Drawing.Size(140, 22)
         Me.PregledKasaToolStripMenuItem1.Text = "Pregled kasa"
         '
         'Komitenti

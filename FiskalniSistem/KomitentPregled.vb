@@ -34,7 +34,7 @@ Public Class KomitentPregled
     Private Sub Pregled_Click(sender As Object, e As EventArgs) Handles Pregled.Click
         komitentIdPretraga = komitentiLista.Item(0, komitentiLista.CurrentRow.Index).Value
         PregledKomitenta.Show()
-
+        Me.Close()
     End Sub
 
     Private Sub Edit_Click(sender As Object, e As EventArgs) Handles Edit.Click

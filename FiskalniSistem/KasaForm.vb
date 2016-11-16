@@ -45,6 +45,8 @@ Public Class KasaForm
             Me.datumDefiskalizacije.Text = kasa.datumDefiskalizacije
             Me.datumFiskalizacije.Text = kasa.datumFiskalizacije
             Me.brojUgovora.Text = kasa.brojUgovora
+            Me.fLink.Text = kasa.fLink
+            Me.ibsa.Text = kasa.ibsa
             Me.napomena.Text = kasa.napomena
         End If
         dokumentacijaPoslataCheck()
@@ -125,6 +127,8 @@ Public Class KasaForm
         kasa.programskaPlomba = Me.programskaPlomba.Text
         kasa.datumFiskalizacije = FormatDateTime(Me.datumFiskalizacije.Value, DateFormat.ShortDate)
         kasa.brojUgovora = Me.brojUgovora.Text
+        kasa.fLink = Me.fLink.Text
+        kasa.ibsa = Me.ibsa.Text
         kasa.napomena = Me.napomena.Text
 
         saveKasa(kasa)
@@ -150,6 +154,8 @@ Public Class KasaForm
         Me.nazivModela.Text = "Model"
         Me.defiskalizacija.CheckState = False
         Me.brojUgovora.Text = ""
+        Me.fLink.Text = ""
+        Me.ibsa.Text = ""
         Me.napomena.Text = ""
     End Sub
 

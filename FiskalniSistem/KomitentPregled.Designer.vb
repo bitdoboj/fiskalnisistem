@@ -105,7 +105,7 @@ Partial Class KomitentPregled
         Me.KeyPreview = True
         Me.Name = "KomitentPregled"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "KomitentiPregled"
+        Me.Text = "Pregled komitenata"
         CType(Me.komitentiLista, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

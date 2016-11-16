@@ -44,6 +44,10 @@ Partial Class ServisForm
         Me.telefon = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.adresaInstaliranja = New System.Windows.Forms.Label()
+        Me.fLink = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.ibsa = New System.Windows.Forms.Label()
         CType(Me.servisiLista, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -256,12 +260,54 @@ Partial Class ServisForm
         Me.adresaInstaliranja.Size = New System.Drawing.Size(0, 15)
         Me.adresaInstaliranja.TabIndex = 66
         '
+        'fLink
+        '
+        Me.fLink.AutoSize = True
+        Me.fLink.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.fLink.Location = New System.Drawing.Point(125, 156)
+        Me.fLink.Name = "fLink"
+        Me.fLink.Size = New System.Drawing.Size(0, 15)
+        Me.fLink.TabIndex = 69
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(74, 156)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(44, 15)
+        Me.Label9.TabIndex = 68
+        Me.Label9.Text = "F-Link:"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(377, 156)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(36, 15)
+        Me.Label11.TabIndex = 67
+        Me.Label11.Text = "IBSA:"
+        '
+        'ibsa
+        '
+        Me.ibsa.AutoSize = True
+        Me.ibsa.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ibsa.Location = New System.Drawing.Point(417, 156)
+        Me.ibsa.Name = "ibsa"
+        Me.ibsa.Size = New System.Drawing.Size(0, 15)
+        Me.ibsa.TabIndex = 70
+        '
         'ServisForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(984, 462)
+        Me.Controls.Add(Me.ibsa)
+        Me.Controls.Add(Me.fLink)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.adresaInstaliranja)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.telefon)
@@ -314,4 +360,8 @@ Partial Class ServisForm
     Friend WithEvents telefon As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents adresaInstaliranja As System.Windows.Forms.Label
+    Friend WithEvents fLink As System.Windows.Forms.Label
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents ibsa As System.Windows.Forms.Label
 End Class

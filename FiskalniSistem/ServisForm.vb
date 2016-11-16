@@ -23,7 +23,11 @@ Public Class ServisForm
         Me.pin.Text = kasa.pin
         Me.telefon.Text = kasa.telefon
         Me.adresaInstaliranja.Text = kasa.adresaInstaliranja
+        Me.fLink.Text = kasa.fLink
+        Me.ibsa.Text = kasa.ibsa
+
         Me.Text = getNazivKomitentaByKasaId(kasaIdPretraga)
+
         komitentIdPretraga = kasa.komitentId
         fillServise()
     End Sub

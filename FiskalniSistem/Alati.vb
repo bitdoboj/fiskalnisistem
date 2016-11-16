@@ -77,8 +77,8 @@ Module Alati
         query = "INSERT INTO Kasa (" +
                 "brojKase, komitentId, brojModula, " +
                 "brojTerminala, simKartica, pin, telefon, adresaInstaliranja, " +
-                "modelId, defiskalizacija, datumDefiskalizacije, dokumentacijaPoslata, datumSlanjaDokumentacije, datumFiskalizacije, fiskalnaPlomba, programskaPlomba, brojUgovora, napomena) " +
-                "VALUES ('" & kasa.brojKase & "', '" & kasa.komitentId & "', '" & kasa.brojModula & "', '" & kasa.brojTerminala & "', '" & kasa.simKartica & "', '" & kasa.pin & "', '" & kasa.telefon & "', '" & kasa.adresaInstaliranja & "', '" & kasa.modelId & "', '" & kasa.defiskalizacija & "', '" & kasa.datumDefiskalizacije & "', '" & kasa.dokumentacijaPoslata & "', '" & kasa.datumSlanjaDokumentacije & "', '" & kasa.datumFiskalizacije & "', '" & kasa.fiskalnaPlomba & "', '" & kasa.programskaPlomba & "', '" & kasa.brojUgovora & "','" & kasa.napomena & "')"
+                "modelId, defiskalizacija, datumDefiskalizacije, dokumentacijaPoslata, datumSlanjaDokumentacije, datumFiskalizacije, fiskalnaPlomba, programskaPlomba, brojUgovora, fLink, ibsa, napomena) " +
+                "VALUES ('" & kasa.brojKase & "', '" & kasa.komitentId & "', '" & kasa.brojModula & "', '" & kasa.brojTerminala & "', '" & kasa.simKartica & "', '" & kasa.pin & "', '" & kasa.telefon & "', '" & kasa.adresaInstaliranja & "', '" & kasa.modelId & "', '" & kasa.defiskalizacija & "', '" & kasa.datumDefiskalizacije & "', '" & kasa.dokumentacijaPoslata & "', '" & kasa.datumSlanjaDokumentacije & "', '" & kasa.datumFiskalizacije & "', '" & kasa.fiskalnaPlomba & "', '" & kasa.programskaPlomba & "', '" & kasa.brojUgovora & "', '" & kasa.fLink & "', '" & kasa.ibsa & "','" & kasa.napomena & "')"
 
         runSQLCommand()
 
@@ -104,6 +104,8 @@ Module Alati
                     "fiskalnaPlomba='" & kasa.fiskalnaPlomba & "', " +
                     "programskaPlomba='" & kasa.programskaPlomba & "', " +
                     "brojUgovora='" & kasa.brojUgovora & "', " +
+                    "fLink='" & kasa.fLink & "', " +
+                    "ibsa='" & kasa.ibsa & "', " +
                     "napomena='" & kasa.napomena & "' " +
                 "WHERE id='" & kasa.id & "'"
 
@@ -146,6 +148,8 @@ Module Alati
             kasa.defiskalizacija = sqlKasa("defiskalizacija")
             kasa.datumDefiskalizacije = If(IsDBNull(sqlKasa("datumDefiskalizacije")), "", sqlKasa("datumDefiskalizacije"))
             kasa.datumFiskalizacije = If(IsDBNull(sqlKasa("datumFiskalizacije")), "", sqlKasa("datumFiskalizacije"))
+            kasa.fLink = sqlKasa("fLink")
+            kasa.ibsa = sqlKasa("ibsa")
             kasa.napomena = If(IsDBNull(sqlKasa("napomena")), "", sqlKasa("napomena"))
 
         Catch ex As Exception
