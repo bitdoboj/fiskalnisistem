@@ -544,6 +544,7 @@ Partial Class KasaForm
         Me.Controls.Add(Me.brojKase)
         Me.Controls.Add(Me.Komitent)
         Me.Controls.Add(Me.Label11)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
         Me.Name = "KasaForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

@@ -1,7 +1,10 @@
 ﻿Imports MySql.Data.MySqlClient
 Imports MySql.Data
+Imports Microsoft.Reporting.WinForms
+
 
 Public Class ServisForm
+    
 
     Private Sub ServisForm_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
         kasaIdPretraga = 0
@@ -14,11 +17,12 @@ Public Class ServisForm
 
     Private Sub Servis_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+
         Dim kasa As Kasa = getKasa(kasaIdPretraga)
         Me.kasaId.Text = kasaIdPretraga
 
         Me.brojModula.Text = kasa.brojModula
-        Me.brojKase.Text = getNazivModela(kasaIdPretraga) + "   " + kasa.brojKase
+        Me.brojKase.Text = kasa.brojKase
         Me.brojTerminala.Text = kasa.brojTerminala
         Me.pin.Text = kasa.pin
         Me.telefon.Text = kasa.telefon
@@ -83,4 +87,21 @@ Public Class ServisForm
         Me.id.Text = 0
         Me.opis.Text = ""
     End Sub
+
+    Private Sub StampajServis_Click(sender As Object, e As EventArgs) Handles StampajServis.Click
+
+        Dim nazivKomitenta As String = getNazivKomitentaByKasaId(Me.kasaId.Text)
+        Dim brojKase As String = getBrojKase(Me.kasaId.Text)
+        Dim datumServisa As String = servisiLista.Item(1, servisiLista.CurrentRow.Index).Value
+        Dim opisServisa As String = servisiLista.Item(2, servisiLista.CurrentRow.Index).Value
+
+        komitentParameter = New ReportParameter("KomitentParameter", nazivKomitenta)
+        brojKaseParameter = New ReportParameter("BrojKaseParameter", brojKase)
+        datumServisaParameter = New ReportParameter("DatumPreuzimanjaParameter", datumServisa)
+        opisServisaParameter = New ReportParameter("OpisServisaParameter", opisServisa)
+
+        ServisPrint.Show()
+    End Sub
+
+    
 End Class

@@ -48,6 +48,7 @@ Partial Class ServisForm
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.ibsa = New System.Windows.Forms.Label()
+        Me.StampajServis = New System.Windows.Forms.Button()
         CType(Me.servisiLista, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -66,7 +67,7 @@ Partial Class ServisForm
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(604, 28)
+        Me.Label10.Location = New System.Drawing.Point(604, 62)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(88, 15)
         Me.Label10.TabIndex = 48
@@ -75,7 +76,7 @@ Partial Class ServisForm
         'datumServisa
         '
         Me.datumServisa.CustomFormat = "dd/mm/yy"
-        Me.datumServisa.Location = New System.Drawing.Point(609, 46)
+        Me.datumServisa.Location = New System.Drawing.Point(609, 80)
         Me.datumServisa.MaxDate = New Date(2030, 12, 31, 0, 0, 0, 0)
         Me.datumServisa.MinDate = New Date(2008, 1, 1, 0, 0, 0, 0)
         Me.datumServisa.Name = "datumServisa"
@@ -86,7 +87,7 @@ Partial Class ServisForm
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(604, 76)
+        Me.Label8.Location = New System.Drawing.Point(604, 110)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(35, 15)
         Me.Label8.TabIndex = 49
@@ -96,7 +97,7 @@ Partial Class ServisForm
         '
         Me.opis.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.opis.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.opis.Location = New System.Drawing.Point(607, 94)
+        Me.opis.Location = New System.Drawing.Point(607, 128)
         Me.opis.Multiline = True
         Me.opis.Name = "opis"
         Me.opis.Size = New System.Drawing.Size(228, 53)
@@ -107,7 +108,7 @@ Partial Class ServisForm
         Me.Snimi.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Snimi.Image = CType(resources.GetObject("Snimi.Image"), System.Drawing.Image)
         Me.Snimi.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Snimi.Location = New System.Drawing.Point(841, 94)
+        Me.Snimi.Location = New System.Drawing.Point(841, 72)
         Me.Snimi.Name = "Snimi"
         Me.Snimi.Padding = New System.Windows.Forms.Padding(10)
         Me.Snimi.Size = New System.Drawing.Size(131, 53)
@@ -119,7 +120,7 @@ Partial Class ServisForm
         'id
         '
         Me.id.AutoSize = True
-        Me.id.Location = New System.Drawing.Point(940, 65)
+        Me.id.Location = New System.Drawing.Point(940, 12)
         Me.id.Name = "id"
         Me.id.Size = New System.Drawing.Size(13, 13)
         Me.id.TabIndex = 52
@@ -129,7 +130,7 @@ Partial Class ServisForm
         'kasaId
         '
         Me.kasaId.AutoSize = True
-        Me.kasaId.Location = New System.Drawing.Point(959, 65)
+        Me.kasaId.Location = New System.Drawing.Point(959, 12)
         Me.kasaId.Name = "kasaId"
         Me.kasaId.Size = New System.Drawing.Size(13, 13)
         Me.kasaId.TabIndex = 53
@@ -298,12 +299,27 @@ Partial Class ServisForm
         Me.ibsa.Size = New System.Drawing.Size(0, 15)
         Me.ibsa.TabIndex = 70
         '
+        'StampajServis
+        '
+        Me.StampajServis.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StampajServis.Image = CType(resources.GetObject("StampajServis.Image"), System.Drawing.Image)
+        Me.StampajServis.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.StampajServis.Location = New System.Drawing.Point(841, 132)
+        Me.StampajServis.Name = "StampajServis"
+        Me.StampajServis.Padding = New System.Windows.Forms.Padding(10)
+        Me.StampajServis.Size = New System.Drawing.Size(131, 53)
+        Me.StampajServis.TabIndex = 71
+        Me.StampajServis.Text = "Print"
+        Me.StampajServis.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.StampajServis.UseVisualStyleBackColor = True
+        '
         'ServisForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(984, 462)
+        Me.Controls.Add(Me.StampajServis)
         Me.Controls.Add(Me.ibsa)
         Me.Controls.Add(Me.fLink)
         Me.Controls.Add(Me.Label9)
@@ -364,4 +380,5 @@ Partial Class ServisForm
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents ibsa As System.Windows.Forms.Label
+    Friend WithEvents StampajServis As System.Windows.Forms.Button
 End Class

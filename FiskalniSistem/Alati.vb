@@ -1,5 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 Imports MySql.Data
+Imports Microsoft.Reporting.WinForms
 
 Module Alati
     Public DatabaseName As String = "fiskalnisistem"
@@ -14,6 +15,11 @@ Module Alati
     Public mySqlDataAdapter As MySqlDataAdapter
     Public komitentIdPretraga As Integer
     Public kasaIdPretraga As Integer
+    Public komitentParameter As ReportParameter
+    Public brojKaseParameter As ReportParameter
+    Public opisServisaParameter As ReportParameter
+    Public datumServisaParameter As ReportParameter
+    
 
     Public Sub openConnection()
         Try
@@ -99,7 +105,7 @@ Module Alati
                     "datumFiskalizacije='" & kasa.datumFiskalizacije & "', " +
                     "dokumentacijaPoslata='" & kasa.dokumentacijaPoslata & "', " +
                     "datumSlanjaDokumentacije='" & kasa.datumSlanjaDokumentacije & "', " +
-                    "defiskalicacija='" & kasa.defiskalizacija & "', " +
+                    "defiskalizacija='" & kasa.defiskalizacija & "', " +
                     "datumDefiskalizacije='" & kasa.datumDefiskalizacije & "', " +
                     "fiskalnaPlomba='" & kasa.fiskalnaPlomba & "', " +
                     "programskaPlomba='" & kasa.programskaPlomba & "', " +
@@ -249,7 +255,7 @@ Module Alati
         Dim sqlcmd As New MySqlCommand(query, sqlcon)
         Dim brojKase As MySqlClient.MySqlDataReader = sqlcmd.ExecuteReader
 
-        
+
 
         brojKase.Read()
 

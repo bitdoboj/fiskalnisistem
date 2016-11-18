@@ -53,8 +53,8 @@
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
-        
-        
+
+
     End Sub
 
     Private Sub KasePregled_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles KasePregled.CellContentClick
