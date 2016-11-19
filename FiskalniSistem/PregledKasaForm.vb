@@ -13,7 +13,7 @@ Public Class PregledKasaForm
 
         query = "SELECT kasa.id, komitent.nazivKomitenta AS Komitent, kasa.brojKase AS Kasa, " +
                     "kasa.brojModula AS Modul, kasa.adresaInstaliranja AS Adresa, kasa.telefon AS Telefon, " +
-                    "kasa.simKartica AS Sim, kasa.pin AS Pin, model.nazivModela AS Model FROM kasa " +
+                    "kasa.simKartica AS Sim, kasa.pin AS Pin, model.nazivModela AS Model, komitent.id AS Kom FROM kasa " +
                     "INNER JOIN model ON kasa.modelId = model.id " +
                     "LEFT JOIN komitent ON kasa.komitentId = komitent.id " +
                     "WHERE (kasa.brojKase LIKE '%" & Me.searchBox.Text & "%');"
@@ -25,8 +25,9 @@ Public Class PregledKasaForm
         pregledKasa.Columns(2).Width = 80
         pregledKasa.Columns(3).Width = 80
         pregledKasa.Columns(4).Width = 150
-        pregledKasa.Columns(6).Width = 131
+        pregledKasa.Columns(6).Width = 120
         pregledKasa.Columns(7).Width = 52
+        pregledKasa.Columns(8).Width = 35
 
     End Sub
 
@@ -44,5 +45,10 @@ Public Class PregledKasaForm
         kasaIdPretraga = pregledKasa.Item(0, pregledKasa.CurrentRow.Index).Value
         ServisForm.Show()
         Close()
+    End Sub
+
+    Private Sub Pregled_Click(sender As Object, e As EventArgs) Handles Pregled.Click
+        komitentIdPretraga = pregledKasa.Item(0, pregledKasa.CurrentRow.Index).Value
+        PregledKomitenta.Show()
     End Sub
 End Class
