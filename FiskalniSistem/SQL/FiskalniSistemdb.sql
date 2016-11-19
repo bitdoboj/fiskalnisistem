@@ -106,6 +106,31 @@ ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_unicode_ci;
 
+-- -----------------------------------------------------
+-- Table `fiskalnisistem`.`servis`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `fiskalnisistem`.`radniNalog` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `BrojRn` VARCHAR(20) CHARACTER SET 'utf8' NULL DEFAULT NULL,
+  `komitentId` INT(11) NULL DEFAULT '0',
+  `datumRn` VARCHAR(20) CHARACTER SET 'utf8' NULL DEFAULT NULL,
+  `mjestoRada` VARCHAR(20) CHARACTER SET 'utf8' NULL DEFAULT NULL,
+  `Serviser` VARCHAR(20) CHARACTER SET 'utf8' NULL DEFAULT NULL,
+  `opisKvara` VARCHAR(255) CHARACTER SET 'utf8' NULL DEFAULT NULL,
+  `dijagnostika` VARCHAR(255) CHARACTER SET 'utf8' NULL DEFAULT NULL,
+  `izvrseniRadovi` VARCHAR(255) CHARACTER SET 'utf8' NULL DEFAULT NULL,
+
+  PRIMARY KEY (`id`),
+  INDEX `fk_komitent_radniNalog_idx` (`komitentId` ASC),
+  CONSTRAINT `fk_komitent_radniNalog_idx`
+    FOREIGN KEY (`komitentId`)
+    REFERENCES `fiskalnisistem`.`radniNalog` (`id`)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_unicode_ci;
+
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;

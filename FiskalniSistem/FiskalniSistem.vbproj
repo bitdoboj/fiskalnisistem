@@ -316,6 +316,7 @@
     <Content Include="Resources\Print_preview.png" />
     <Content Include="Resources\Save.png" />
     <Content Include="Resources\settings.png" />
+    <Content Include="SQL\FiskalniSistemdb.sql" />
   </ItemGroup>
   <ItemGroup>
     <PublishFile Include="Microsoft.ReportViewer.Common">
@@ -379,6 +380,7 @@
       <FileType>Assembly</FileType>
     </PublishFile>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
