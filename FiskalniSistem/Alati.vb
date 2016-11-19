@@ -154,6 +154,8 @@ Module Alati
             kasa.defiskalizacija = sqlKasa("defiskalizacija")
             kasa.datumDefiskalizacije = If(IsDBNull(sqlKasa("datumDefiskalizacije")), "", sqlKasa("datumDefiskalizacije"))
             kasa.datumFiskalizacije = If(IsDBNull(sqlKasa("datumFiskalizacije")), "", sqlKasa("datumFiskalizacije"))
+            kasa.dokumentacijaPoslata = sqlKasa("dokumentacijaPoslata")
+            kasa.datumSlanjaDokumentacije = If(IsDBNull(sqlKasa("datumSlanjaDokumentacije")), "", sqlKasa("datumSlanjaDokumentacije"))
             kasa.fLink = sqlKasa("fLink")
             kasa.ibsa = sqlKasa("ibsa")
             kasa.napomena = If(IsDBNull(sqlKasa("napomena")), "", sqlKasa("napomena"))

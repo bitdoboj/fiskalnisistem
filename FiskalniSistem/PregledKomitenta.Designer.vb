@@ -58,9 +58,12 @@ Partial Class PregledKomitenta
         '
         'KasePregled
         '
+        Me.KasePregled.AllowUserToAddRows = False
+        Me.KasePregled.AllowUserToDeleteRows = False
         Me.KasePregled.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.KasePregled.Location = New System.Drawing.Point(12, 235)
         Me.KasePregled.Name = "KasePregled"
+        Me.KasePregled.ReadOnly = True
         Me.KasePregled.Size = New System.Drawing.Size(960, 212)
         Me.KasePregled.TabIndex = 59
         '
@@ -277,6 +280,7 @@ Partial Class PregledKomitenta
         Me.Controls.Add(Me.nazivKomitenta)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
+        Me.MaximizeBox = False
         Me.Name = "PregledKomitenta"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Pregled komitenta"

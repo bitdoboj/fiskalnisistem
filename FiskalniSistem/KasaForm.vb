@@ -44,6 +44,8 @@ Public Class KasaForm
             Me.defiskalizacija.CheckState = If(kasa.defiskalizacija = -1, 1, 0)
             Me.datumDefiskalizacije.Text = kasa.datumDefiskalizacije
             Me.datumFiskalizacije.Text = kasa.datumFiskalizacije
+            Me.dokumentacijaPoslata.CheckState = If(kasa.dokumentacijaPoslata = -1, 1, 0)
+            Me.datumSlanjaDokumentacije.Text = kasa.datumSlanjaDokumentacije
             Me.brojUgovora.Text = kasa.brojUgovora
             Me.fLink.Text = kasa.fLink
             Me.ibsa.Text = kasa.ibsa
