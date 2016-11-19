@@ -24,10 +24,11 @@ Public Class PregledKasaForm
         pregledKasa.Columns(1).Width = 163
         pregledKasa.Columns(2).Width = 80
         pregledKasa.Columns(3).Width = 80
-        pregledKasa.Columns(4).Width = 150
+        pregledKasa.Columns(4).Width = 140
         pregledKasa.Columns(6).Width = 120
-        pregledKasa.Columns(7).Width = 52
-        pregledKasa.Columns(8).Width = 35
+        pregledKasa.Columns(7).Width = 45
+        pregledKasa.Columns(8).Width = 78
+        pregledKasa.Columns(9).Width = 45
 
     End Sub
 
@@ -48,7 +49,7 @@ Public Class PregledKasaForm
     End Sub
 
     Private Sub Pregled_Click(sender As Object, e As EventArgs) Handles Pregled.Click
-        komitentIdPretraga = pregledKasa.Item(0, pregledKasa.CurrentRow.Index).Value
+        komitentIdPretraga = pregledKasa.Item(9, pregledKasa.CurrentRow.Index).Value
         PregledKomitenta.Show()
     End Sub
 End Class
