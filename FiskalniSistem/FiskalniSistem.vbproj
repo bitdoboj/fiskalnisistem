@@ -111,24 +111,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="KomitentPregled.Designer.vb">
+    <Compile Include="Kasa\KasaAlati.vb" />
+    <Compile Include="Komitent\KomitentAlati.vb" />
+    <Compile Include="Komitent\KomitentPregled.Designer.vb">
       <DependentUpon>KomitentPregled.vb</DependentUpon>
     </Compile>
-    <Compile Include="KomitentPregled.vb">
+    <Compile Include="Komitent\KomitentPregled.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Modeli\Errors.vb" />
     <Compile Include="Modeli\Kasa.vb" />
-    <Compile Include="KasaForm.Designer.vb">
+    <Compile Include="Kasa\KasaForm.Designer.vb">
       <DependentUpon>KasaForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="KasaForm.vb">
+    <Compile Include="Kasa\KasaForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KomitentForm.Designer.vb">
+    <Compile Include="Komitent\KomitentForm.Designer.vb">
       <DependentUpon>KomitentForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="KomitentForm.vb">
+    <Compile Include="Komitent\KomitentForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Alati.vb" />
@@ -139,13 +141,14 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Modeli\Komitent.vb" />
-    <Compile Include="modelForm.Designer.vb">
+    <Compile Include="ModelKase\modelForm.Designer.vb">
       <DependentUpon>modelForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="modelForm.vb">
+    <Compile Include="ModelKase\modelForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Modeli\Servis.vb" />
+    <Compile Include="ModelKase\ModelKaseAlati.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -162,40 +165,43 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="NadjiKomitenta.Designer.vb">
+    <Compile Include="Komitent\NadjiKomitenta.Designer.vb">
       <DependentUpon>NadjiKomitenta.vb</DependentUpon>
     </Compile>
-    <Compile Include="NadjiKomitenta.vb">
+    <Compile Include="Komitent\NadjiKomitenta.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NadjiModel.Designer.vb">
+    <Compile Include="ModelKase\NadjiModel.Designer.vb">
       <DependentUpon>NadjiModel.vb</DependentUpon>
     </Compile>
-    <Compile Include="NadjiModel.vb">
+    <Compile Include="ModelKase\NadjiModel.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PregledKasaForm.Designer.vb">
+    <Compile Include="Kasa\PregledKasaForm.Designer.vb">
       <DependentUpon>PregledKasaForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="PregledKasaForm.vb">
+    <Compile Include="Kasa\PregledKasaForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PregledKomitenta.Designer.vb">
+    <Compile Include="Komitent\PregledKomitenta.Designer.vb">
       <DependentUpon>PregledKomitenta.vb</DependentUpon>
     </Compile>
-    <Compile Include="PregledKomitenta.vb">
+    <Compile Include="Komitent\PregledKomitenta.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ServisForm.Designer.vb">
+    <Compile Include="Modeli\RadniNalog.vb" />
+    <Compile Include="RadniNalog\RadniNalogAlati.vb" />
+    <Compile Include="Servis\ServisAlati.vb" />
+    <Compile Include="Servis\ServisForm.Designer.vb">
       <DependentUpon>ServisForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="ServisForm.vb">
+    <Compile Include="Servis\ServisForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ServisPrint.Designer.vb">
+    <Compile Include="Servis\ServisPrint.Designer.vb">
       <DependentUpon>ServisPrint.vb</DependentUpon>
     </Compile>
-    <Compile Include="ServisPrint.vb">
+    <Compile Include="Servis\ServisPrint.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SettingsForm.Designer.vb">
@@ -212,19 +218,19 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="KasaForm.resx">
+    <EmbeddedResource Include="Kasa\KasaForm.resx">
       <DependentUpon>KasaForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KomitentForm.resx">
+    <EmbeddedResource Include="Komitent\KomitentForm.resx">
       <DependentUpon>KomitentForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KomitentPregled.resx">
+    <EmbeddedResource Include="Komitent\KomitentPregled.resx">
       <DependentUpon>KomitentPregled.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Meni.resx">
       <DependentUpon>Meni.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="modelForm.resx">
+    <EmbeddedResource Include="ModelKase\modelForm.resx">
       <DependentUpon>modelForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -233,23 +239,23 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="NadjiKomitenta.resx">
+    <EmbeddedResource Include="Komitent\NadjiKomitenta.resx">
       <DependentUpon>NadjiKomitenta.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NadjiModel.resx">
+    <EmbeddedResource Include="ModelKase\NadjiModel.resx">
       <DependentUpon>NadjiModel.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PregledKasaForm.resx">
+    <EmbeddedResource Include="Kasa\PregledKasaForm.resx">
       <DependentUpon>PregledKasaForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PregledKomitenta.resx">
+    <EmbeddedResource Include="Komitent\PregledKomitenta.resx">
       <DependentUpon>PregledKomitenta.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ServisForm.resx">
+    <EmbeddedResource Include="Servis\ServisForm.resx">
       <DependentUpon>ServisForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ServisKaseReport.rdlc" />
-    <EmbeddedResource Include="ServisPrint.resx">
+    <EmbeddedResource Include="Servis\ServisKaseReport.rdlc" />
+    <EmbeddedResource Include="Servis\ServisPrint.resx">
       <DependentUpon>ServisPrint.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SettingsForm.resx">
