@@ -122,7 +122,6 @@ CREATE TABLE IF NOT EXISTS `fiskalnisistem`.`radniNalog` (
 
   PRIMARY KEY (`id`),
   INDEX `fk_komitent_radniNalog_idx` (`komitentId` ASC),
-  CONSTRAINT `fk_komitent_radniNalog_idx`
     FOREIGN KEY (`komitentId`)
     REFERENCES `fiskalnisistem`.`radniNalog` (`id`)
     ON DELETE RESTRICT

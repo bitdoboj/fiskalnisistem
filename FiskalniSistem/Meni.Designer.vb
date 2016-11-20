@@ -35,17 +35,21 @@ Partial Class Meni
         Me.KasaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.NovaKasaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PregledKasaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RadniNalogToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NoviRadniNalogToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PregledToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Komitenti = New System.Windows.Forms.Button()
         Me.Kase = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.radniNalog = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.KasaToolStripMenuItem1})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.KasaToolStripMenuItem1, Me.RadniNalogToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(984, 24)
@@ -63,7 +67,7 @@ Partial Class Meni
         '
         Me.NoviKomitentToolStripMenuItem.Image = CType(resources.GetObject("NoviKomitentToolStripMenuItem.Image"), System.Drawing.Image)
         Me.NoviKomitentToolStripMenuItem.Name = "NoviKomitentToolStripMenuItem"
-        Me.NoviKomitentToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.NoviKomitentToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
         Me.NoviKomitentToolStripMenuItem.Text = "Novi komitent"
         '
         'ToolStripSeparator1
@@ -122,6 +126,26 @@ Partial Class Meni
         Me.PregledKasaToolStripMenuItem1.Size = New System.Drawing.Size(140, 22)
         Me.PregledKasaToolStripMenuItem1.Text = "Pregled kasa"
         '
+        'RadniNalogToolStripMenuItem
+        '
+        Me.RadniNalogToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NoviRadniNalogToolStripMenuItem, Me.PregledToolStripMenuItem})
+        Me.RadniNalogToolStripMenuItem.Name = "RadniNalogToolStripMenuItem"
+        Me.RadniNalogToolStripMenuItem.Size = New System.Drawing.Size(82, 20)
+        Me.RadniNalogToolStripMenuItem.Text = "Radni nalog"
+        '
+        'NoviRadniNalogToolStripMenuItem
+        '
+        Me.NoviRadniNalogToolStripMenuItem.Image = CType(resources.GetObject("NoviRadniNalogToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.NoviRadniNalogToolStripMenuItem.Name = "NoviRadniNalogToolStripMenuItem"
+        Me.NoviRadniNalogToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.NoviRadniNalogToolStripMenuItem.Text = "Novi radni nalog"
+        '
+        'PregledToolStripMenuItem
+        '
+        Me.PregledToolStripMenuItem.Name = "PregledToolStripMenuItem"
+        Me.PregledToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.PregledToolStripMenuItem.Text = "Pregled"
+        '
         'Komitenti
         '
         Me.Komitenti.BackgroundImage = Global.FiskalniSistem.My.Resources.Resources.folder_customer_icon
@@ -167,12 +191,26 @@ Partial Class Meni
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Fiskalni sistem"
         '
+        'radniNalog
+        '
+        Me.radniNalog.BackgroundImage = CType(resources.GetObject("radniNalog.BackgroundImage"), System.Drawing.Image)
+        Me.radniNalog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.radniNalog.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.radniNalog.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.radniNalog.Location = New System.Drawing.Point(266, 36)
+        Me.radniNalog.Name = "radniNalog"
+        Me.radniNalog.Size = New System.Drawing.Size(110, 110)
+        Me.radniNalog.TabIndex = 5
+        Me.radniNalog.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.radniNalog.UseVisualStyleBackColor = True
+        '
         'Meni
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(984, 462)
+        Me.Controls.Add(Me.radniNalog)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Komitenti)
         Me.Controls.Add(Me.Kase)
@@ -206,4 +244,8 @@ Partial Class Meni
     Friend WithEvents Komitenti As System.Windows.Forms.Button
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents RadniNalogToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents NoviRadniNalogToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents PregledToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents radniNalog As System.Windows.Forms.Button
 End Class

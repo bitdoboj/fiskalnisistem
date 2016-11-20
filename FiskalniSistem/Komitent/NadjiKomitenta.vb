@@ -34,8 +34,14 @@ Public Class NadjiKomitenta
 
 
     Private Sub KomitentiGridView_CellMouseDoubleClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles KomitentiGridView.CellMouseDoubleClick
-        KasaForm.nazivKomitenta.Text = KomitentiGridView.Item(1, KomitentiGridView.CurrentRow.Index).Value
-        KasaForm.komitentid.Text = KomitentiGridView.Item(0, KomitentiGridView.CurrentRow.Index).Value
+        If Application.OpenForms().OfType(Of RadniNalogForm).Any Then
+            RadniNalogForm.nazivKomitenta.Text = KomitentiGridView.Item(1, KomitentiGridView.CurrentRow.Index).Value
+            RadniNalogForm.komitentid.Text = KomitentiGridView.Item(0, KomitentiGridView.CurrentRow.Index).Value
+        Else
+            KasaForm.nazivKomitenta.Text = KomitentiGridView.Item(1, KomitentiGridView.CurrentRow.Index).Value
+            KasaForm.komitentid.Text = KomitentiGridView.Item(0, KomitentiGridView.CurrentRow.Index).Value
+        End If
+        
         Close()
 
 

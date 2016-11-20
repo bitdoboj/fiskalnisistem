@@ -30,9 +30,12 @@ Partial Class NadjiKomitenta
         '
         'KomitentiGridView
         '
+        Me.KomitentiGridView.AllowUserToAddRows = False
+        Me.KomitentiGridView.AllowUserToDeleteRows = False
         Me.KomitentiGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.KomitentiGridView.Location = New System.Drawing.Point(12, 45)
         Me.KomitentiGridView.Name = "KomitentiGridView"
+        Me.KomitentiGridView.ReadOnly = True
         Me.KomitentiGridView.Size = New System.Drawing.Size(340, 133)
         Me.KomitentiGridView.TabIndex = 0
         '

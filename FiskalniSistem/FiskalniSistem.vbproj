@@ -41,6 +41,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DocumentationFile>Fiskalni Sistem.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -191,6 +192,18 @@
     </Compile>
     <Compile Include="Modeli\RadniNalog.vb" />
     <Compile Include="RadniNalog\RadniNalogAlati.vb" />
+    <Compile Include="RadniNalog\RadniNalogForm.Designer.vb">
+      <DependentUpon>RadniNalogForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RadniNalog\RadniNalogForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RadniNalog\RadniNalogLista.Designer.vb">
+      <DependentUpon>RadniNalogLista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RadniNalog\RadniNalogLista.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Servis\ServisAlati.vb" />
     <Compile Include="Servis\ServisForm.Designer.vb">
       <DependentUpon>ServisForm.vb</DependentUpon>
@@ -250,6 +263,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Komitent\PregledKomitenta.resx">
       <DependentUpon>PregledKomitenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RadniNalog\RadniNalogForm.resx">
+      <DependentUpon>RadniNalogForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RadniNalog\RadniNalogLista.resx">
+      <DependentUpon>RadniNalogLista.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Servis\ServisForm.resx">
       <DependentUpon>ServisForm.vb</DependentUpon>
@@ -320,6 +339,7 @@
     <Content Include="Resources\plus-icon-13071-16x16.ico" />
     <Content Include="Resources\plus.png" />
     <Content Include="Resources\Print_preview.png" />
+    <Content Include="Resources\Radni Nalog.png" />
     <Content Include="Resources\Save.png" />
     <Content Include="Resources\settings.png" />
     <Content Include="SQL\FiskalniSistemdb.sql" />
