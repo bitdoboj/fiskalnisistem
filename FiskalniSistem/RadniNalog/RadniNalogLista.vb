@@ -8,7 +8,8 @@
         fillRadneNaloge()
     End Sub
     Private Sub fillRadneNaloge()
-        query = "SELECT * FROM radniNalog ORDER BY id DESC"
+
+        query = "SELECT radniNalog.id, komitent.nazivKomitenta, radniNalog.brojRn, radniNalog.datumRn, radniNalog.mjestoRada,  radniNalog.serviser FROM radniNalog LEFT JOIN komitent ON radniNalog.komitentId=komitent.id ORDER BY radniNalog.id DESC"
 
         Me.pregledRadniNaloga.DataSource = getDataFromDatabase(query)
     End Sub

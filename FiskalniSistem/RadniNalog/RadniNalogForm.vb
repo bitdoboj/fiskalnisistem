@@ -14,7 +14,7 @@
         Dim radniNalog As New RadniNalog
         radniNalog.komitentId = Me.komitentid.Text
         radniNalog.brojRn = getBrojRadnogNaloga()
-        radniNalog.datumRn = Me.datumRn.Text
+        radniNalog.datumRn = FormatDateTime(Me.datumRn.Text, DateFormat.ShortDate)
         radniNalog.mjestoRada = Me.mjestoRada.Text
         radniNalog.Serviser = Me.serviser.Text
         radniNalog.opisKvara = Me.opisKvara.Text
