@@ -15,6 +15,7 @@ Module Alati
     Public mySqlDataAdapter As MySqlDataAdapter
     Public komitentIdPretraga As Integer
     Public kasaIdPretraga As Integer
+    Public radniNalogIdPretraga As Integer
     Public komitentParameter As ReportParameter
     Public brojKaseParameter As ReportParameter
     Public opisServisaParameter As ReportParameter

@@ -121,9 +121,10 @@ CREATE TABLE IF NOT EXISTS `fiskalnisistem`.`radniNalog` (
   `izvrseniRadovi` VARCHAR(255) CHARACTER SET 'utf8' NULL DEFAULT NULL,
 
   PRIMARY KEY (`id`),
-  INDEX `fk_komitent_radniNalog_idx` (`komitentId` ASC),
+  INDEX `fk_radninalog_komitent1_idx` (`komitentId` ASC),
+  CONSTRAINT `fk_radninalog_komitent1`
     FOREIGN KEY (`komitentId`)
-    REFERENCES `fiskalnisistem`.`radniNalog` (`id`)
+    REFERENCES `fiskalnisistem`.`komitent` (`id`)
     ON DELETE RESTRICT
     ON UPDATE CASCADE)
 ENGINE = InnoDB

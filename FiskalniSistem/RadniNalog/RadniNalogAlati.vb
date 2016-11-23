@@ -38,4 +38,33 @@ Module RadniNalogAlati
 
         Return brojRn
     End Function
+
+    Public Function getRadniNalog(id As Integer)
+
+        Dim radniNalog As New RadniNalog
+        openConnection()
+        Try
+
+            query = "SELECT * FROM radniNalog WHERE radninalog.id=" & id & ";"
+            mySqlDataAdapter = New MySqlDataAdapter(query, sqlcon)
+            Dim sqlcmd As New MySqlCommand(query, sqlcon)
+            Dim sqlRadniNalog As MySqlClient.MySqlDataReader = sqlcmd.ExecuteReader
+
+            sqlRadniNalog.Read()
+            radniNalog.id = sqlRadniNalog("id")
+            radniNalog.brojRn = sqlRadniNalog("brojRn")
+            radniNalog.komitentId = sqlRadniNalog("komitentId")
+            radniNalog.datumRn = sqlRadniNalog("datumRn")
+            radniNalog.mjestoRada = sqlRadniNalog("mjestoRada")
+            radniNalog.Serviser = sqlRadniNalog("Serviser")
+            radniNalog.dijagnostika = sqlRadniNalog("opisKvara")
+            radniNalog.izvrseniRadovi = sqlRadniNalog("dijagnostika")
+            radniNalog.opisKvara = If(IsDBNull(sqlRadniNalog("izvrseniRadovi")), "", sqlRadniNalog("izvrseniRadovi"))
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+        closeConnection()
+        Return radniNalog
+    End Function
 End Module

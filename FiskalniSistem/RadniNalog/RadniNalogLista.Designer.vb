@@ -33,7 +33,7 @@ Partial Class RadniNalogLista
         Me.Pregled.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Pregled.Image = CType(resources.GetObject("Pregled.Image"), System.Drawing.Image)
         Me.Pregled.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Pregled.Location = New System.Drawing.Point(704, 46)
+        Me.Pregled.Location = New System.Drawing.Point(841, 46)
         Me.Pregled.Name = "Pregled"
         Me.Pregled.Padding = New System.Windows.Forms.Padding(10)
         Me.Pregled.Size = New System.Drawing.Size(131, 53)
