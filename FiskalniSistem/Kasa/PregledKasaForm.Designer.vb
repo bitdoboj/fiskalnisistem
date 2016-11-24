@@ -47,15 +47,16 @@ Partial Class PregledKasaForm
         'searchBox
         '
         Me.searchBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.searchBox.Location = New System.Drawing.Point(65, 48)
+        Me.searchBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.searchBox.Location = New System.Drawing.Point(61, 72)
         Me.searchBox.Name = "searchBox"
-        Me.searchBox.Size = New System.Drawing.Size(192, 20)
+        Me.searchBox.Size = New System.Drawing.Size(184, 29)
         Me.searchBox.TabIndex = 1
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 52)
+        Me.Label1.Location = New System.Drawing.Point(8, 76)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(47, 13)
         Me.Label1.TabIndex = 2

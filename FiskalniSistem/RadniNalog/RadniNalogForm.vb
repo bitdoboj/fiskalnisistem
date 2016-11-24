@@ -37,16 +37,7 @@
         Me.dijagnostika.Text = ""
         Me.izvrseniRadovi.Text = ""
     End Sub
-
-    Private Sub RadniNalogForm_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
-        RadniNalogLista.Show()
-    End Sub
-
     Private Sub RadniNalogForm_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
         If e.KeyCode = Keys.Escape Then Me.Close()
-    End Sub
-
-    Private Sub RadniNalogForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
     End Sub
 End Class
