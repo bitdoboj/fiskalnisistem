@@ -47,6 +47,8 @@ Public Class KasaForm
             Me.dokumentacijaPoslata.CheckState = If(kasa.dokumentacijaPoslata = -1, 1, 0)
             Me.datumSlanjaDokumentacije.Text = kasa.datumSlanjaDokumentacije
             Me.brojUgovora.Text = kasa.brojUgovora
+            Me.fiskalnaPlomba.Text = kasa.fiskalnaPlomba
+            Me.programskaPlomba.Text = kasa.programskaPlomba
             Me.fLink.Text = kasa.fLink
             Me.ibsa.Text = kasa.ibsa
             Me.napomena.Text = kasa.napomena

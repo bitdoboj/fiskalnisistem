@@ -57,9 +57,9 @@ Module RadniNalogAlati
             radniNalog.datumRn = sqlRadniNalog("datumRn")
             radniNalog.mjestoRada = sqlRadniNalog("mjestoRada")
             radniNalog.Serviser = sqlRadniNalog("Serviser")
-            radniNalog.dijagnostika = sqlRadniNalog("opisKvara")
-            radniNalog.izvrseniRadovi = sqlRadniNalog("dijagnostika")
-            radniNalog.opisKvara = If(IsDBNull(sqlRadniNalog("izvrseniRadovi")), "", sqlRadniNalog("izvrseniRadovi"))
+            radniNalog.dijagnostika = If(IsDBNull(sqlRadniNalog("dijagnostika")), "", sqlRadniNalog("dijagnostika"))
+            radniNalog.izvrseniRadovi = If(IsDBNull(sqlRadniNalog("izvrseniRadovi")), "", sqlRadniNalog("izvrseniRadovi"))
+            radniNalog.opisKvara = If(IsDBNull(sqlRadniNalog("opisKvara")), "", sqlRadniNalog("opisKvara"))
 
         Catch ex As Exception
             MsgBox(ex.Message)

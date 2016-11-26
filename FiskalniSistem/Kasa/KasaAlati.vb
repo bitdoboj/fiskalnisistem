@@ -74,6 +74,8 @@ Module KasaAlati
             kasa.datumFiskalizacije = If(IsDBNull(sqlKasa("datumFiskalizacije")), "", sqlKasa("datumFiskalizacije"))
             kasa.dokumentacijaPoslata = sqlKasa("dokumentacijaPoslata")
             kasa.datumSlanjaDokumentacije = If(IsDBNull(sqlKasa("datumSlanjaDokumentacije")), "", sqlKasa("datumSlanjaDokumentacije"))
+            kasa.programskaPlomba = sqlKasa("programskaPlomba")
+            kasa.fiskalnaPlomba = sqlKasa("fiskalnaPlomba")
             kasa.fLink = sqlKasa("fLink")
             kasa.ibsa = sqlKasa("ibsa")
             kasa.napomena = If(IsDBNull(sqlKasa("napomena")), "", sqlKasa("napomena"))
