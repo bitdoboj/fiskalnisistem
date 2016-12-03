@@ -22,6 +22,7 @@ Partial Class Meni
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Meni))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -43,8 +44,13 @@ Partial Class Meni
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.radniNalog = New System.Windows.Forms.Button()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.PregledNalogaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NoviKomitentToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PregledKasaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -67,7 +73,7 @@ Partial Class Meni
         '
         Me.NoviKomitentToolStripMenuItem.Image = CType(resources.GetObject("NoviKomitentToolStripMenuItem.Image"), System.Drawing.Image)
         Me.NoviKomitentToolStripMenuItem.Name = "NoviKomitentToolStripMenuItem"
-        Me.NoviKomitentToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
+        Me.NoviKomitentToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.NoviKomitentToolStripMenuItem.Text = "Novi komitent"
         '
         'ToolStripSeparator1
@@ -204,12 +210,40 @@ Partial Class Meni
         Me.radniNalog.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.radniNalog.UseVisualStyleBackColor = True
         '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PregledNalogaToolStripMenuItem, Me.NoviKomitentToolStripMenuItem1, Me.PregledKasaToolStripMenuItem})
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(154, 92)
+        '
+        'PregledNalogaToolStripMenuItem
+        '
+        Me.PregledNalogaToolStripMenuItem.Image = CType(resources.GetObject("PregledNalogaToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.PregledNalogaToolStripMenuItem.Name = "PregledNalogaToolStripMenuItem"
+        Me.PregledNalogaToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
+        Me.PregledNalogaToolStripMenuItem.Text = "Pregled naloga"
+        '
+        'NoviKomitentToolStripMenuItem1
+        '
+        Me.NoviKomitentToolStripMenuItem1.Image = CType(resources.GetObject("NoviKomitentToolStripMenuItem1.Image"), System.Drawing.Image)
+        Me.NoviKomitentToolStripMenuItem1.Name = "NoviKomitentToolStripMenuItem1"
+        Me.NoviKomitentToolStripMenuItem1.Size = New System.Drawing.Size(153, 22)
+        Me.NoviKomitentToolStripMenuItem1.Text = "Novi komitent"
+        '
+        'PregledKasaToolStripMenuItem
+        '
+        Me.PregledKasaToolStripMenuItem.Image = CType(resources.GetObject("PregledKasaToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.PregledKasaToolStripMenuItem.Name = "PregledKasaToolStripMenuItem"
+        Me.PregledKasaToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
+        Me.PregledKasaToolStripMenuItem.Text = "Pregled kasa"
+        '
         'Meni
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(984, 462)
+        Me.ContextMenuStrip = Me.ContextMenuStrip1
         Me.Controls.Add(Me.radniNalog)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Komitenti)
@@ -224,6 +258,7 @@ Partial Class Meni
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ContextMenuStrip1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -248,4 +283,8 @@ Partial Class Meni
     Friend WithEvents NoviRadniNalogToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PregledToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents radniNalog As System.Windows.Forms.Button
+    Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents PregledNalogaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents NoviKomitentToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents PregledKasaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

@@ -61,4 +61,17 @@
     Private Sub radniNalog_Click(sender As Object, e As EventArgs) Handles radniNalog.Click
         RadniNalogForm.Show()
     End Sub
+
+    Private Sub PregledNalogaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PregledNalogaToolStripMenuItem.Click
+        RadniNalogLista.Show()
+    End Sub
+
+    Private Sub NoviKomitentToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles NoviKomitentToolStripMenuItem1.Click
+        komitentIdPretraga = 0
+        KomitentForm.Show()
+    End Sub
+
+    Private Sub PregledKasaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PregledKasaToolStripMenuItem.Click
+        PregledKasaForm.Show()
+    End Sub
 End Class
